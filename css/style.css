@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url('../img/background.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+/* ---------- Navbar ---------- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    height: 20vh;
+}
+.logo img{
+    height: 20vh;
+}
+.menu {
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    list-style: none;
+    
+}
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.menu li a.active,
+.menu li a:hover {
+    background: blue;
+    color: #fff;
+}
+.black {
+    background: rgba(0,0,0, .7);
+    transition: 1s all;
+}
+/* ---------- End of navbar ---------- */
+
+/* ---------- First section ---------- */
+.section1 {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    /* padding-left: 10%; */
+    /* justify-content: center; */
+    flex-direction: column;
+    flex: 1;
+}
+.text {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 3.5rem;
+    padding-top: 5%;
+    padding-left: 10%;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px rgba(255, 255, 255, 0.2);
+}
+.btnFirstSection {
+    margin-top: 4%;
+    margin-left: 10%;
+    font-size: 1.4rem;
+    padding: 0.5rem 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.07rem;
+    border-radius: 10px;
+    border: none;
+}
+/* ---------- End of first section ---------- */
+
+/* ---------- Second section ---------- */
+.section2 {
+    height: 80vh;
+    background-color: blue;
+}
+/* ---------- End of second section ---------- */
+
+/* ---------- Third section ---------- */
+.section3 {
+    height: 80vh;
+    background-color: red;
+}
+/* ---------- End of third section ---------- */
+
+/* ---------- Footer ---------- */
+
+/* ---------- End of footer ---------- */
