@@ -63,7 +63,7 @@ $(document).ready(function() {
             reveal("#div2");
             newTraining.user = username.value;
             newTraining.code = accessCode.value;
-            scrollTo("#div2");
+            // scrollTo("#div2");
         } else reveal(".error1")
 
 
@@ -90,7 +90,7 @@ $(document).ready(function() {
     btnNext2.addEventListener('click', () => {
         if (isChecked) {
             reveal("#div3");
-            scrollTo("#div3");
+            // scrollTo("#div3");
 
         } else reveal(".error2");
     })
@@ -105,10 +105,11 @@ $(document).ready(function() {
             console.log("greska datum");
         } else {
             reveal("#div4");
-            scrollTo("#div4");
+            // scrollTo("#div4");
 
             newTraining.date = `${day}.${month}.${year}.`;
             hide(".error3");
+            console.log("ovde se sakriva poruka o gresci");
         }
     })
 
@@ -144,7 +145,7 @@ $(document).ready(function() {
 
         // kad se prikaze poruka za uspesan unos odmah nakon nekog vremena se gubi
         reveal(".success");
-        setTimeout(() => hide(".success"), 1500)
+        setTimeout(() => hide(".success"), 2500)
     })
 
 
