@@ -22,6 +22,7 @@ nav {
     top: 0;
     height: 10vh;
     background-color: #000;
+    z-index: 11;
 }
 .logo img{
     /* height: 15vh; */
@@ -50,7 +51,7 @@ nav {
     padding: 5px 10px;
     border-radius: 10px;
 }
-.menu li a.active,
+.menu li a.active1,
 .menu li a:hover {
     background: blue;
     color: #fff;
@@ -306,3 +307,140 @@ footer {
     font-family: 'Montserrat', sans-serif;
 }
 /* ---------- End of footer ---------- */
+
+/* O Nama */
+/* ----------- Div 1 ---------------*/
+.div1{
+    margin-top: 0;
+    margin-bottom: 0;
+    background-image: linear-gradient(37deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
+    height: 60vh;
+}
+.div1 h1{
+    margin: 0;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: white;
+}
+
+
+.container1{
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 0;
+    flex-wrap: wrap;
+}
+.container11{
+    width:40%;
+    height: 100%;
+}
+.container12 img{
+  width: 15rem;
+  height: 15rem;
+
+}
+#h21Div1{
+    padding-top: 8%;
+    font-size: 32px;
+    color: white;
+    margin-bottom: 4%;
+}
+#p1Div1{
+    
+    font-size: 21px;
+    color: white;
+    width: 45vw;
+    margin-top:0px;
+    padding-bottom: 2%;
+}
+/* Div 2 */
+.div2{
+    background-image: linear-gradient(294deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
+    margin: 0;
+    margin-top: 0;
+    /* height: 370px; */
+    height: 60vh;
+}
+
+
+.container2{
+    display: flex;
+    justify-content:space-evenly ;
+    align-items: center;
+    margin-top: 0;
+    flex-wrap: wrap;
+
+}
+#h21Div2{
+    margin-top:0 ;
+    margin-bottom: 4%;
+    margin-left: 20%;
+    font-size: 32px;
+    color: white;
+    padding-top: 15%;
+}  
+.container2 img{
+    position: static;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 20px;   
+}
+#p1Div2{
+    margin-top:0 ;
+    margin-left: 20%;
+    font-size: 21px;
+    width: 45vw;
+    color: white;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+/* Div 3 */
+.div3{
+    margin-top: 0;
+    margin-bottom: 0;
+    background-image: linear-gradient(37deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
+    height: 60vh;
+}
+
+.container3 {
+    display: flex;
+    justify-content:space-evenly ;
+    align-items: center;
+    margin-top: 0;
+    flex-wrap: wrap;
+}
+.container3 img{
+    width: 15rem;
+    height: 15rem;
+   
+}
+#h21Div3{
+    margin-top: 0; 
+    font-size: 32px;
+    color: white;
+    padding-top: 7%;   
+}
+#p1Div3{
+    font-size: 21px;
+    color: white;
+    width: 45vw;
+    margin-bottom: 0;
+    padding-bottom: 10%;
+}
+/* Div 4 */
+.div4{
+    margin-top: 0;
+    height: 80vh;
+    background-image:linear-gradient(to bottom, rgba(36,185,240,1) 80%, rgba(255,255,255,1) 100%);
+    
+}
+#h21Div4{
+    text-align: center;
+    font-size: 38px;
+    margin-top: 0;
+    color: white;
+    margin-bottom: 3%;
+}
