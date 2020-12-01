@@ -7,11 +7,15 @@
     /* font-size: 10px; */
     box-sizing: border-box;
 }
+
+
 /* body {
     
 } */
 
+
 /* ---------- Navbar ---------- */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -23,26 +27,29 @@ nav {
     height: 10vh;
     background-color: #000;
 }
-.logo img{
+
+.logo img {
     /* height: 15vh; */
     cursor: pointer;
     min-height: 16vh;
     max-height: 16vh;
     padding-top: 20%;
 }
+
 .menu {
     width: 40vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .menu li {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 1.1rem;
     list-style: none;
-    
 }
+
 .menu li a {
     text-decoration: none;
     color: #fff;
@@ -50,18 +57,24 @@ nav {
     padding: 5px 10px;
     border-radius: 10px;
 }
+
 .menu li a.active,
 .menu li a:hover {
     background: blue;
     color: #fff;
 }
+
 .black {
-    background: rgba(0,0,0, .7);
+    background: rgba(0, 0, 0, .7);
     transition: 1s all;
 }
+
+
 /* ---------- End of navbar ---------- */
 
+
 /* ---------- First section ---------- */
+
 .section1 {
     width: 100%;
     height: 80vh;
@@ -74,13 +87,16 @@ nav {
     background-repeat: no-repeat;
     background-position: bottom center;
 }
-.left , .right {
+
+.left,
+.right {
     flex: 1;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding-left: 10%;
 }
+
 .text {
     font-family: 'Roboto', sans-serif;
     color: #fff;
@@ -91,6 +107,7 @@ nav {
     letter-spacing: 1px;
     text-shadow: 2px 2px rgba(255, 255, 255, 0.2);
 }
+
 .btnFirstSection {
     width: 30%;
     margin-top: 4%;
@@ -103,9 +120,13 @@ nav {
     border-radius: 10px;
     border: none;
 }
+
+
 /* ---------- End of first section ---------- */
 
+
 /* ---------- Second section ---------- */
+
 .section2 h1 {
     font-size: 3rem;
     text-align: center;
@@ -113,6 +134,7 @@ nav {
     font-family: 'Roboto', sans-serif;
     /* height: 80vh; */
 }
+
 .container2 {
     max-width: 100vw;
     height: 60vh;
@@ -127,6 +149,7 @@ nav {
     margin-bottom: 5%;
     flex-wrap: wrap;
 }
+
 .card {
     /* flex: 1; */
     /* padding: 0 5%; */
@@ -140,21 +163,28 @@ nav {
     background-color: aqua;
     /* color: #fff; */
 }
+
 .card img {
     padding: 5%;
     border-radius: 2rem;
 }
+
 .card h2 {
     padding: 10% 0;
     font-family: 'Montserrat', sans-serif;
 }
+
+
 /* ---------- End of second section ---------- */
 
+
 /* ---------- Third section ---------- */
+
 .section3 {
     height: 90vh;
     background-color: rgba(177, 113, 219, .25);
 }
+
 .container3 {
     display: flex;
     justify-content: space-around;
@@ -163,6 +193,7 @@ nav {
     padding: 0 10%;
     flex-wrap: wrap;
 }
+
 .section3 h1 {
     font-size: 3rem;
     text-align: center;
@@ -170,16 +201,19 @@ nav {
     padding-bottom: 5%;
     padding-top: 5%;
 }
+
 .contact {
     width: 25%;
 }
-.contact form{
+
+.contact form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     /* width: 100%; */
 }
+
 .input {
     border: none;
     border-bottom: 1px solid #000;
@@ -189,24 +223,28 @@ nav {
     /* text-indent: 0.7rem; */
     background-color: transparent;
 }
+
 .input:focus {
     outline: none;
     /* background-color: rgb(177, 113, 219); */
-    background: linear-gradient(0deg,rgba(177, 113, 219, .35) 2%,rgba(177, 113, 219, .30) 48%, rgba(177, 113, 219, .25) 100%);
+    background: linear-gradient(0deg, rgba(177, 113, 219, .35) 2%, rgba(177, 113, 219, .30) 48%, rgba(177, 113, 219, .25) 100%);
     border-radius: 5px;
 }
+
 .contact form label {
     font-size: 1.3rem;
     margin-top: 5%;
     margin-bottom: 2%;
     font-family: 'Montserrat', sans-serif;
 }
+
 .contact form textarea {
     resize: none;
     background-color: blue;
     border: none;
     border-radius: 10px;
 }
+
 .btnContact {
     margin: auto;
     margin-top: 5%;
@@ -221,28 +259,36 @@ nav {
     letter-spacing: 0.2rem;
     cursor: pointer;
 }
+
 .btnContact:hover {
     background-color: blue;
     color: white;
 }
+
 .map {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
+
 .map h2 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 5%;
     padding-top: 0;
 }
+
+
 /* ---------- End of third section ---------- */
 
+
 /* ---------- Footer ---------- */
+
 footer {
     height: 30vh;
 }
+
 .footer-container {
     height: 100%;
     background-color: red;
@@ -252,57 +298,347 @@ footer {
     padding-left: 15%;
     padding-right: 15%;
 }
+
 .col {
     /* border: 1px solid #000; */
     width: 25%;
     height: 50%;
 }
+
 .col-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* width: 100%; */
 }
+
 .img-footer {
     width: 70%;
     height: 100%;
 }
+
 .list-footer {
     width: 67%;
 }
-.list-footer li{
+
+.list-footer li {
     list-style: none;
     margin-bottom: 10px;
 }
+
 .list-footer li span {
     padding-left: 2%;
     font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
 }
+
 .list-footer li span a {
     text-decoration: none;
     color: #000;
 }
+
 .icon {
     width: 100%;
     color: blue;
     flex-basis: auto;
 }
+
 .full {
     padding-top: 5%;
     width: 80%;
 }
+
 .col-contact {
     flex-grow: 1.5;
 }
+
 .col-flex1 {
     display: flex;
     justify-content: center top;
     flex-direction: column;
     align-items: center;
 }
+
 .col h2 {
     margin-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
 }
+
+
 /* ---------- End of footer ---------- */
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+
+/* STILOVI ZA STRANICU <<TERMINI>> */
+
+
+/* ova klasa je za sve one divove koji se pojavljuju nakon klika dugmica */
+
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
+
+/* ----------------------------------------- */
+
+
+/* u ovom delu se nalazi stilizacija NAVBARA */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    background-color: #000;
+}
+
+.logo img {
+    /* height: 15vh; */
+    cursor: pointer;
+    min-height: 16vh;
+    max-height: 16vh;
+    padding-top: 20%;
+}
+
+
+/* ----------------------------------------- */
+
+
+/* u ovom delu se nalazi stilizacija dugmica */
+
+.next {
+    border: none;
+    /* max-width: 9rem; */
+    width: 70%;
+    margin: 0 15%;
+    padding: 0.4rem 0;
+    border: 1px solid rgb(29, 69, 143);
+    border-radius: 6px;
+    background-color: rgb(50, 94, 177);
+    color: white;
+}
+
+.next:hover {
+    color: white;
+    border: 1px solid rgb(16, 48, 105);
+    background-color: rgb(34, 75, 151);
+    box-shadow: 0px 1px 1px 1px rgb(22, 62, 131);
+    transform: translateY(-1px);
+    cursor: pointer;
+}
+
+.submit {
+    border: none;
+    width: 25%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: 1px solid rgb(78, 156, 58);
+    border-radius: 6px;
+    background-color: rgb(54, 112, 39);
+    color: white;
+}
+
+.submit:hover {
+    color: white;
+    border: 1px solid rgb(33, 83, 20);
+    background-color: rgb(50, 134, 29);
+    box-shadow: 0px 1px 1px 1px rgb(47, 116, 30);
+    transform: translateY(-1px);
+    cursor: pointer;
+}
+
+
+/* ----------------------------------------- */
+
+
+/* ovaj deo se odnosi na prostor oko pola za unos */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form #div1,
+#div2,
+#div3,
+#div4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* .form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.inputSpace {
+    width: 30%;
+    /* padding: 5% 0 0 15%; */
+}
+
+
+/* #div1 {
+    background-image: linear-gradient(rgb(167, 233, 213), rgb(100, 197, 168));
+}
+
+#div2 {
+    background-image: linear-gradient(rgb(100, 197, 168), rgb(56, 161, 130));
+}
+
+#div3 {
+    background-image: linear-gradient( rgb(56, 161, 130), rgb(28, 134, 102));
+}
+
+#div4 {
+    background-image: linear-gradient(rgb(28, 134, 102), rgb(8, 109, 78));
+} */
+
+
+/* ----------------------------------------- */
+
+
+/* ovaj deo se odnosi na to kako ce izgledati poruke kad je nesto uspesno i kad neje */
+
+.form div .error {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.3rem;
+    width: 100vw;
+    padding: 2.5% 0;
+    margin: 2% 0;
+    background-color: rgb(240, 157, 157);
+    color: rgb(136, 7, 7);
+    border-radius: 1rem;
+}
+
+.success {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    background-color: rgb(152, 238, 166);
+    color: rgb(7, 136, 2);
+    border-radius: 1rem;
+    font-size: 1.3rem;
+}
+
+
+/* ----------------------------------------- */
+
+
+/* stil za prostor gde je dugme ZAKAZI*/
+
+.submitSpace {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 3% 0;
+}
+
+
+/* ----------------------------------------- */
+
+
+/* konkretni stilovi za label i za input */
+
+label {
+    margin-bottom: 2%;
+    font-size: 1.1rem;
+}
+
+label:not(:first-child) {
+    margin-top: 2%;
+}
+
+input {
+    margin-bottom: 2.5%;
+}
+
+input[type="text"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form #div2 .inputSpace #radioinputs {
+    display: flex;
+    flex-direction: row;
+    /* mozda ove ne treba ovako .... */
+    margin-left: -10%;
+    width: 120%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+
+/* stilizujemo innptu za accessCode */
+
+#accessCode {
+    padding: 0.4rem 0;
+    letter-spacing: 2rem;
+    font-size: 1.5rem;
+}
+
+input[type="date"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+
+/* ----------------------------------------- */
+
+
+/* sredjivanje tabele */
+
+.tableSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableSection h2 {
+    letter-spacing: 0.1rem;
+    color: rgb(51, 91, 165);
+}
+
+.table tr th {
+    width: 15%;
+    padding: 1rem 0;
+}
+
+.table tr td {
+    text-align: center;
+    width: 15%;
+    padding: 1rem 0;
+    background-color: rgb(169, 195, 243);
+    border: 1.5px solid rgb(126, 164, 236);
+    border-radius: 25px;
+}
+
+.table tr td:first-child {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}

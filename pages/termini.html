@@ -1,11 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zakazivanje termina</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
+
 <body>
-    <center><h1>Termini</h1></center>
+    <center>
+        <h1>Termini</h1>
+    </center>
+    <!-- NAVBAR -->
+    <!-- <nav>
+        <div class="logo">
+            <a href="#"><img src="img/logo.png" alt="sixpackgym-logo" /></a>
+        </div>
+        <ul class="menu">
+            <li><a href="#" class="active">Početna</a></li>
+            <li><a href="pages/o-nama.html">O nama</a></li>
+            <li><a href="pages/termini.html">Termini</a></li>
+            <li><a href="pages/program.html">Program</a></li>
+        </ul>
+    </nav> -->
+
+
+    <section class="form">
+        <div id="div1">
+            <div class="inputSpace">
+                <label for="username">Unesite vaše korisnicko ime</label>
+                <input type="text" id="username" name="username">
+
+                <!-- ovaj pristupni kod ima samo 6 cifara -->
+                <label for="accessCode">Unesite pristupni kod</label>
+                <input type="text" id="accessCode" name="accessCode" maxlength="6">
+
+
+                <button class="next next1">Dalje</button>
+            </div>
+            <div class="hidden error error1 ">
+                <!-- hidden -->
+                Uneseno korisnicko ime i pristupni kod nisu odgovarajuci!
+            </div>
+        </div>
+        <!-- ovaj div treba da bude klase hidden i kad se klikne "dalje" onda se sklanja ta klasa -->
+        <div class="hidden" id="div2">
+            <!-- hidden -->
+            <div class="inputSpace">
+                <p>Izaberite tip treninga: </p>
+                <div id="radioinputs">
+                    <span>
+                        <input type="radio" name="tip" id="grupni" value="grupni">
+                        <label for="grupni">Grupni </label>
+                    </span>
+
+                    <span>
+                        <input type="radio" name="tip" id="individualni" value="individualni">
+                        <label for="individualni">Individualni</label>
+                    </span>
+
+                    <span>
+                        <input type="radio" name="tip" id="vodjeni" value="vodjeni">
+                        <label for="vodjeni">Vodjeni</label>
+                    </span>
+
+                    <span>
+                        <input type="radio" name="tip" id="kardio" value="kardio">
+                        <label for="kardio">Kardio</label>
+                    </span>
+                </div>
+
+
+                <button class="next next2">Dalje</button>
+            </div>
+
+            <!-- u slucaju greske -->
+            <div class="error error2 hidden">
+                <!-- hidden -->
+                Morate oznaciti tip treninga koji zakazujete!
+            </div>
+
+        </div>
+
+        <div class="hidden" id="div3">
+            <!-- hidden -->
+            <div class="inputSpace">
+                <label for="date">Unesite kog dana zelite da zakazete trening</label>
+                <input type="date" name="date" id="date" value="">
+                <button class="next next3">Dalje</button>
+            </div>
+
+            <!-- u slucaju greske -->
+            <div class="error error3 hidden">
+                <!-- hidden -->
+                Uneseni datum nije odgovarajuci!
+            </div>
+        </div>
+
+
+
+        <!-- kad se lupi "submit" trebaju da se vrate hidden klase svuda i sve da bude kao na po;etku sem 
+            sem sto ce dole da ima i tabela sa zakazanim terminima -->
+        <div class="submitSpace hidden" id="div4">
+            <!-- hidden -->
+            <button class="submit">Zakažite termin</button>
+
+        </div>
+    </section>
+
+    <section class="success hidden">
+        <!-- hidden -->
+        <p>Uspesno ste zakazali vas trening</p>
+    </section>
+
+    <!-- sekcija sa tabelom koja se prikazuje tek kad korisnik unese neki termin -->
+    <section class="hidden tableSection">
+        <!-- <table class="table hidden"> -->
+        <table class="table">
+            <h2>Vaši treninzi:</h2>
+            <tr>
+                <th scope="col">Vrsta treninga</th>
+                <th scope="col">Datum i vreme</th>
+                <th scope="col">Izabrani trener</th>
+            </tr>
+
+        </table>
+    </section>
+
+    <script src="../js/main.js"></script>
 </body>
+
 </html>
