@@ -8,11 +8,6 @@
     box-sizing: border-box;
 }
 
-body,
-html {
-    height: 100%;
-}
-
 
 /* ---------- Navbar ---------- */
 
@@ -67,6 +62,35 @@ nav {
 .black {
     background: rgba(0, 0, 0, .7);
     transition: 1s all;
+}
+
+
+/* Add a black background color to the top navigation
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+} */
+
+
+/* Style the links inside the navigation bar */
+
+
+/* .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+} */
+
+
+/* Hide the link that should open and close the topnav on small screens */
+
+nav .icon {
+    display: none;
 }
 
 
@@ -374,12 +398,13 @@ footer {
 /* STILOVI ZA STRANICU <<TERMINI>> */
 
 .pageTermini {
-    /* height: 100vh; */
-    height: 100%;
-    background-image: linear-gradient(red, yellow);
+    height: 100vh;
+    /* height: 100%; */
+    background-image: linear-gradient(rgb(57, 121, 194), rgb(170, 206, 240));
     background-size: cover;
-    background-position: center;
+    background-position: absolute;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
@@ -426,12 +451,14 @@ nav {
     border: none;
     /* max-width: 9rem; */
     width: 70%;
-    margin: 0 15%;
+    margin: 5% 15%;
     padding: 0.4rem 0;
     border: 1px solid rgb(29, 69, 143);
     border-radius: 6px;
     background-color: rgb(50, 94, 177);
     color: white;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
 }
 
 .next:hover {
@@ -452,6 +479,8 @@ nav {
     border-radius: 6px;
     background-color: rgb(54, 112, 39);
     color: white;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
 }
 
 .submit:hover {
@@ -527,13 +556,14 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     width: 100vw;
     padding: 2.5% 0;
     margin: 2% 0;
     background-color: rgb(240, 157, 157);
     color: rgb(136, 7, 7);
     border-radius: 1rem;
+    text-align: center;
 }
 
 .success {
@@ -541,10 +571,13 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     width: 100vw;
+    padding: 1.5% 0;
+    margin-bottom: 1.5%;
     background-color: rgb(152, 238, 166);
     color: rgb(7, 136, 2);
     border-radius: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
+    text-align: center;
 }
 
 
@@ -558,6 +591,8 @@ nav {
     display: flex;
     align-items: center;
     padding: 3% 0;
+    margin-bottom: 0;
+    background-color: transparent;
 }
 
 
@@ -567,12 +602,8 @@ nav {
 /* konkretni stilovi za label i za input */
 
 label {
-    margin-bottom: 2%;
-    font-size: 1.1rem;
-}
-
-label:not(:first-child) {
-    margin-top: 2%;
+    /* padding-bottom: 5%; */
+    font-size: 1.7rem;
 }
 
 input {
@@ -585,7 +616,9 @@ input[type="text"] {
     border-bottom: 1px solid black;
     width: 100%;
     text-align: center;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
+    line-height: 2rem;
+    font-size: 1.5rem;
 }
 
 .form #div2 .inputSpace #radioinputs {
@@ -593,6 +626,7 @@ input[type="text"] {
     flex-direction: row;
     /* mozda ove ne treba ovako .... */
     margin-left: -10%;
+    padding-top: 3%;
     width: 120%;
     justify-content: space-between;
     align-items: center;
@@ -605,7 +639,8 @@ input[type="text"] {
 #accessCode {
     padding: 0.4rem 0;
     letter-spacing: 2rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 800;
 }
 
 input[type="date"] {
@@ -613,7 +648,9 @@ input[type="date"] {
     border: none;
     border-bottom: 1px solid black;
     width: 100%;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
+    line-height: 2rem;
+    font-size: 1.5rem;
 }
 
 
@@ -627,28 +664,168 @@ input[type="date"] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
+    padding-bottom: 10%;
 }
 
 .tableSection h2 {
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
+    font-size: 2.5rem;
     color: rgb(51, 91, 165);
 }
 
 .table tr th {
-    width: 15%;
+    width: 20%;
     padding: 1rem 0;
+    font-size: 2rem;
 }
 
 .table tr td {
     text-align: center;
-    width: 15%;
     padding: 1rem 0;
-    background-color: rgb(169, 195, 243);
-    border: 1.5px solid rgb(126, 164, 236);
+    background-color: rgb(161, 185, 228);
+    border: 1.5px solid rgb(80, 129, 221);
     border-radius: 25px;
+    font-size: 1.7rem;
 }
 
 .table tr td:first-child {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+}
+
+
+/* ----------------------------------------- */
+
+
+/* Media query ---- RESPONZIVNOST */
+
+
+/* Small devices (phones, 600px and below) */
+
+@media only screen and (max-width: 600px) {
+    /* vezano za stranicu TERMINI */
+    .submit {
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+    }
+    .inputSpace {
+        width: 70%;
+    }
+    .form #div2 .inputSpace #radioinputs {
+        flex-direction: column;
+        margin-left: 30%;
+        align-items: flex-start;
+    }
+    .table tr th {
+        padding: 0;
+        font-size: 1.7rem;
+    }
+    /* -------------------------------- */
+    /* hamburger */
+    nav ul.menu {
+        display: none;
+    }
+    nav a.icon {
+        /* float: right; */
+        display: block;
+        justify-self: end;
+        width: 20px;
+        font-size: 3rem;
+        text-decoration: none;
+    }
+    nav.responsive {
+        position: relative;
+        height: 150px;
+    }
+    nav.responsive ul.menu {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px)and (max-width: 768px) {
+    /* vezano za stranicu TERMINI */
+    .inputSpace {
+        width: 60%;
+    }
+    /* -------------------------------- */
+    /* hamburger */
+    nav ul.menu {
+        display: none;
+    }
+    nav a.icon {
+        /* float: right; */
+        display: block;
+        justify-self: end;
+        width: 20px;
+        font-size: 3rem;
+        text-decoration: none;
+    }
+    nav.responsive {
+        position: relative;
+        height: 250px;
+    }
+    nav.responsive ul.menu {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    nav.responsive ul.menu li {
+        padding: 5% 0;
+        font-size: 1.5rem;
+    }
+    /* -------------------------------- */
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px)and (max-width: 992px) {
+    /* vezano za stranicu TERMINI */
+    .inputSpace {
+        width: 50%;
+    }
+    /* -------------------------------- */
+    /* hamburger */
+    nav ul.menu {
+        display: none;
+    }
+    nav a.icon {
+        /* float: right; */
+        display: block;
+        justify-self: end;
+        width: 20px;
+        font-size: 3rem;
+        text-decoration: none;
+    }
+    nav.responsive {
+        position: relative;
+        height: 250px;
+    }
+    nav.responsive ul.menu {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    nav.responsive ul.menu li {
+        padding: 5% 0;
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* vezano za stranicu TERMINI */
+    .inputSpace {
+        width: 40%;
+    }
 }

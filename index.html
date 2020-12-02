@@ -2,136 +2,134 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Six Pack Gym</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Six Pack Gym</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 </head>
 
 <body>
 
-  <!----------------- Navbar ----------------->
-  <nav>
-    <div class="logo">
-      <a href="#"><img src="img/logo.png" alt="sixpackgym-logo" /></a>
-    </div>
-    <ul class="menu">
-      <li><a href="#" class="active">Početna</a></li>
-      <li><a href="pages/o-nama.html">O nama</a></li>
-      <li><a href="pages/termini.html">Termini</a></li>
-      <li><a href="pages/program.html">Program</a></li>
-    </ul>
-  </nav>
-  <!----------------- End of navbar ----------------->
-
-  <!----------------- First section ----------------->
-  <div class="section1">
-    <div class="left">
-      <div class="text">
-        Jedini loš <br />trening je onaj <br />koji se nije desio.
-      </div>
-      <button class="btnFirstSection">Zakaži termin</button>
-    </div>
-    <div class="right">
-
-    </div>
-  </div>
-  <!----------------- End of first section ----------------->
-
-  <!----------------- Second section ----------------->
-  <section class="section2">
-    <h1>Vrste treninga</h1>
-    <div class="container2">
-
-      <div class="card">
-        <a href="pages/program.html"><img src="img/group-training.jpg" alt="grupni-trening" width="400px"></a>
-        <h2>Grupni trening</h2>
-      </div>
-      <div class="card">
-        <a href="pages/program.html"><img src="img/group-training.jpg" alt="grupni-trening" width="400px"></a>
-        <h2>Individualni trening</h2>
-      </div>
-      <div class="card">
-        <a href="pages/program.html"><img src="img/group-training.jpg" alt="grupni-trening" width="400px"></a>
-        <h2>Kardio trening</h2>
-      </div>
-    </div>
-  </section>
-  <!----------------- End of second section ----------------->
-
-  <!----------------- Third section ----------------->
-  <section class="section3">
-    <h1>Kontakt</h1>
-    <div class="container3">
-      <div class="contact">
-        <form action="">
-          <label for="contact-name">Ime i prezime</label>
-          <input class="input" type="text" id="contact-name" name="contact-name">
-          <label for="contact-email">Email</label>
-          <input class="input" type="email" id="contact-email" name="contact-email">
-          <label for="contact-phone">Broj telefona</label>
-          <input class="input" type="tel" id="contact-phone" name="contact-phone"
-            pattern="[0-9]{​​​​​3}​​​​​-[0-9]{​​​​​2}​​​​​-[0-9]{​​​​​3}​​​​​">
-          <label for="contact-message">Vaša poruka</label>
-          <textarea name="contact-message" id="" cols="52" rows="10"></textarea>
-          <input class="btnContact" type="submit" value="Pošalji">
-        </form>
-      </div>
-      <div class="map">
-        <h2>Posetite nas</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.7781611827804!2d20.476251415803183!3d44.76493878784818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a70fe5828b487%3A0x2b2492adee656ba0!2z0JHRg9C70LXQstCw0YAg0J7RgdC70L7QsdC-0ZLQtdGa0LAgMjkzLCDQkdC10L7Qs9GA0LDQtA!5e0!3m2!1ssr!2srs!4v1606554963167!5m2!1ssr!2srs"
-          width="600" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-          tabindex="0"></iframe>
-      </div>
-    </div>
-  </section>
-  <!----------------- End of third section ----------------->
-
-  <!----------------- Footer ----------------->
-  <footer>
-    <div class="footer-container">
-      <div class="col col-flex">
-        <img class="img-footer" src="img/logo.png" alt="">
-      </div>
-      <div class="col col-contact col-flex1">
-        <h2>Kontakt informacije</h2>
-        <ul class="list-footer">
-          <li>
-            <i class="fa fa-map-marker-alt"></i>
-            <span>Adresa: Bulevar Oslobođenja 293</span>
-          </li>
-          <li>
-            <i class="fa fa-phone-alt"></i>
-            <span><a href="tel:+381658478484">065/84-78-484</a></span>
-          </li>
-          <li>
-            <i class="fa fa-clock"></i>
-            <span>Radno vreme: <span>Ponedeljak - Petak: 07h-22h<br><span style="padding-left: 39%;">Subota - Nedelja:
-                  09h-17h</span></span>
-            </span>
-          </li>
-        </ul>
-      </div>
-      <div class="col col-flex1">
-        <h2>Zapratite nas</h2>
-        <div class="col-flex full">
-          <a href="https://www.facebook.com/SixpackStudio/" target="_blank"><i
-              class="fab fa-facebook-square icon fa-2x"></i></a>
-          <a href="https://www.instagram.com/six_pack_studio/" target="_blank"><i
-              class="fab fa-instagram icon fa-2x"></i></a>
-          <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter-square icon fa-2x"></i></a>
-          <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube-square icon fa-2x"></i></a>
+    <!----------------- Navbar ----------------->
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="img/logo.png" alt="sixpackgym-logo" /></a>
         </div>
-      </div>
+        <ul class="menu">
+            <li><a href="#" class="active">Početna</a></li>
+            <li><a href="./pages/o-nama.html">O nama</a></li>
+            <li><a href="./pages/termini.html">Termini</a></li>
+            <li><a href="./pages/program.html">Program</a></li>
+        </ul>
+        <a href="#" class="icon" onclick="myFunction()">&#x2630;</a>
+    </nav>
+    <!----------------- End of navbar ----------------->
+
+    <!----------------- First section ----------------->
+    <div class="section1">
+        <div class="left">
+            <div class="text">
+                Jedini loš <br />trening je onaj <br />koji se nije desio.
+            </div>
+            <button class="btnFirstSection">Zakaži termin</button>
+        </div>
+        <div class="right">
+
+        </div>
     </div>
+    <!----------------- End of first section ----------------->
 
-  </footer>
-  <!----------------- End of footer ----------------->
+    <!----------------- Second section ----------------->
+    <section class="section2">
+        <h1>Vrste treninga</h1>
+        <div class="container2">
 
-  <script src="js/main.js"></script>
+            <div class="card">
+                <a href="pages/program.html"><img src="img/group-training.jpg" alt="grupni-trening" width="400px"></a>
+                <h2>Grupni trening</h2>
+            </div>
+            <div class="card">
+                <a href="pages/program.html"><img src="img/group-training.jpg" alt="grupni-trening" width="400px"></a>
+                <h2>Individualni trening</h2>
+            </div>
+            <div class="card">
+                <a href="pages/program.html"><img src="img/group-training.jpg" alt="grupni-trening" width="400px"></a>
+                <h2>Kardio trening</h2>
+            </div>
+        </div>
+    </section>
+    <!----------------- End of second section ----------------->
+
+    <!----------------- Third section ----------------->
+    <section class="section3">
+        <h1>Kontakt</h1>
+        <div class="container3">
+            <div class="contact">
+                <form action="">
+                    <label for="contact-name">Ime i prezime</label>
+                    <input class="input" type="text" id="contact-name" name="contact-name">
+                    <label for="contact-email">Email</label>
+                    <input class="input" type="email" id="contact-email" name="contact-email">
+                    <label for="contact-phone">Broj telefona</label>
+                    <input class="input" type="tel" id="contact-phone" name="contact-phone" pattern="[0-9]{​​​​​3}​​​​​-[0-9]{​​​​​2}​​​​​-[0-9]{​​​​​3}​​​​​">
+                    <label for="contact-message">Vaša poruka</label>
+                    <textarea name="contact-message" id="" cols="52" rows="10"></textarea>
+                    <input class="btnContact" type="submit" value="Pošalji">
+                </form>
+            </div>
+            <div class="map">
+                <h2>Posetite nas</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.7781611827804!2d20.476251415803183!3d44.76493878784818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a70fe5828b487%3A0x2b2492adee656ba0!2z0JHRg9C70LXQstCw0YAg0J7RgdC70L7QsdC-0ZLQtdGa0LAgMjkzLCDQkdC10L7Qs9GA0LDQtA!5e0!3m2!1ssr!2srs!4v1606554963167!5m2!1ssr!2srs"
+                    width="600" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </section>
+    <!----------------- End of third section ----------------->
+
+    <!----------------- Footer ----------------->
+    <footer>
+        <div class="footer-container">
+            <div class="col col-flex">
+                <img class="img-footer" src="img/logo.png" alt="">
+            </div>
+            <div class="col col-contact col-flex1">
+                <h2>Kontakt informacije</h2>
+                <ul class="list-footer">
+                    <li>
+                        <i class="fa fa-map-marker-alt"></i>
+                        <span>Adresa: Bulevar Oslobođenja 293</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-phone-alt"></i>
+                        <span><a href="tel:+381658478484">065/84-78-484</a></span>
+                    </li>
+                    <li>
+                        <i class="fa fa-clock"></i>
+                        <span>Radno vreme: <span>Ponedeljak - Petak: 07h-22h<br><span style="padding-left: 39%;">Subota - Nedelja:
+                  09h-17h</span></span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col col-flex1">
+                <h2>Zapratite nas</h2>
+                <div class="col-flex full">
+                    <a href="https://www.facebook.com/SixpackStudio/" target="_blank"><i
+              class="fab fa-facebook-square icon fa-2x"></i></a>
+                    <a href="https://www.instagram.com/six_pack_studio/" target="_blank"><i
+              class="fab fa-instagram icon fa-2x"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter-square icon fa-2x"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube-square icon fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!----------------- End of footer ----------------->
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

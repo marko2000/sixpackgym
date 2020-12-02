@@ -39,20 +39,7 @@ $(document).ready(function() {
                 username.value.length > 1 && accessCode.value.length === 6
         }
         // prosledjuje se input polje
-    const collectDate = (dateInput) => {
-        let date = dateInput.val().split("-");
-        day = date[2];
-        console.log("dan " + day)
-        month = date[1];
-        console.log("mesec " + month)
-        year = date[0];
-        console.log("godina " + year)
-        let selectedDate = new Date()
-        selectedDate.setFullYear(date[0]);
-        selectedDate.setMonth(date[1] - 1); //iz nekog razloga vraca mesec za jedan vise
-        selectedDate.setDate(date[2]);
-        return selectedDate;
-    }
+
 
     // <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
     // ovde resavamo event listener-e
@@ -64,6 +51,9 @@ $(document).ready(function() {
             newTraining.user = username.value;
             newTraining.code = accessCode.value;
             // scrollTo("#div2");
+
+            // treba mi da podesim visinu nakon pritiska da bude min-content
+            document.querySelector(".pageTermini").style.height = "100%";
         } else reveal(".error1")
 
 
@@ -95,22 +85,64 @@ $(document).ready(function() {
         } else reveal(".error2");
     })
 
+    const isValidDate = (dateInput) => {
+        let selectedDate = collectDate(dateInput);
+        let currentDate = new Date();
+        if (currentDate < selectedDate &&
+            selectedDate.getFullYear != null && selectedDate.getFullYear != undefined &&
+            selectedDate.getMonth != null && selectedDate.getMonth != undefined &&
+            selectedDate.getDate != null && selectedDate.getDate != undefined) {
+            console.log("godina: " + selectedDate.getFullyear);
+            console.log("mesec: " + selectedDate.getMonth);
+            console.log("dan: " + selectedDate.getDate);
+
+            return true;
+        } else return false;
+    }
+
+    const collectDate = (dateInput) => {
+        let date = dateInput.val().split("-");
+        day = date[2];
+        console.log("dan " + day)
+        month = date[1];
+        console.log("mesec " + month)
+        year = date[0];
+        console.log("godina " + year)
+        let selectedDate = new Date()
+        selectedDate.setFullYear(date[0]);
+        selectedDate.setMonth(date[1] - 1); //iz nekog razloga vraca mesec za jedan vise
+        selectedDate.setDate(date[2]);
+        return selectedDate;
+    }
 
     btnNext3.addEventListener('click', () => {
 
-        let currentDate = new Date();
-        let selectedDate = collectDate($('#date'));
-        if (currentDate > selectedDate) {
-            reveal(".error3");
-            console.log("greska datum");
-        } else {
+        if (isValidDate($('#date'))) {
             reveal("#div4");
-            // scrollTo("#div4");
+            //     // scrollTo("#div4");
 
             newTraining.date = `${day}.${month}.${year}.`;
             hide(".error3");
             console.log("ovde se sakriva poruka o gresci");
+        } else {
+            reveal(".error3");
+            console.log("greska datum");
+            hide(".submitSpace");
         }
+
+        // let currentDate = new Date();
+        // let selectedDate = collectDate($('#date'));
+        // if (currentDate > selectedDate) {
+        //     reveal(".error3");
+        //     console.log("greska datum");
+        // } else {
+        //     reveal("#div4");
+        //     // scrollTo("#div4");
+
+        //     newTraining.date = `${day}.${month}.${year}.`;
+        //     hide(".error3");
+        //     console.log("ovde se sakriva poruka o gresci");
+        // }
     })
 
     // cim se promeni datum odmah se sklanja upozorenje ako je postojalo
@@ -150,3 +182,16 @@ $(document).ready(function() {
 
 
 });
+
+
+
+// -----------------------------------------
+// HAMBURGER
+let isHamburgerClicked = false;
+
+function myFunction() {
+    var x = document.querySelector("nav");
+    if (!isHamburgerClicked) x.className += " responsive";
+    else x.className = "";
+    isHamburgerClicked = !isHamburgerClicked;
+}
