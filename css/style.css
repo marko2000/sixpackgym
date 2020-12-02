@@ -786,7 +786,7 @@ input[type="date"] {
 
 /* Medium devices (landscape tablets, 768px and up) */
 
-@media only screen and (min-width: 768px)and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
     /* vezano za stranicu TERMINI */
     .inputSpace {
         width: 50%;
