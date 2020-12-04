@@ -7,6 +7,8 @@
     <title>Zakazivanje termina</title>
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
 
 </head>
 
@@ -30,6 +32,10 @@
         <section class="form">
             <div id="div1">
                 <div class="inputSpace">
+                    <div class="hidden changeUser">
+                        <button class="changeUser">Novi korisnik</button>
+                    </div>
+
                     <label for="username">Unesite vaše korisnicko ime</label>
                     <input type="text" id="username" name="username">
 
@@ -125,15 +131,53 @@
                     <th scope="col">Datum i vreme</th>
                     <th scope="col">Izabrani trener</th>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <td scope="col">kardio</td>
                     <td scope="col">1.12.2020</td>
                     <td scope="col">Butrus Butrus Gali</td>
-                </tr>
-
-
+                </tr> -->
             </table>
         </section>
+        <!----------------- Footer ----------------->
+        <footer>
+            <div class="footer-container">
+                <div class="col col-flex">
+                    <img class="img-footer" src="../img/logo.png" alt="">
+                </div>
+                <div class="col col-contact col-flex1">
+                    <h2>Kontakt informacije</h2>
+                    <ul class="list-footer">
+                        <li>
+                            <i class="fa fa-map-marker-alt"></i>
+                            <span>Adresa: Bulevar Oslobođenja 293</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone-alt"></i>
+                            <span><a href="tel:+381658478484">065/84-78-484</a></span>
+                        </li>
+                        <li>
+                            <i class="fa fa-clock"></i>
+                            <span>Radno vreme: <span>Ponedeljak - Petak: 07h-22h<br><span style="padding-left: 39%;">Subota - Nedelja:
+                  09h-17h</span></span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col col-flex1">
+                    <h2>Zapratite nas</h2>
+                    <div class="col-flex full">
+                        <a href="https://www.facebook.com/SixpackStudio/" target="_blank"><i
+              class="fab fa-facebook-square icon fa-2x"></i></a>
+                        <a href="https://www.instagram.com/six_pack_studio/" target="_blank"><i
+              class="fab fa-instagram icon fa-2x"></i></a>
+                        <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter-square icon fa-2x"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube-square icon fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!----------------- End of footer ----------------->
 
     </div>
 

@@ -22,6 +22,7 @@ $(document).ready(function() {
     let btnNext1 = document.querySelector(".next1");
     let btnNext3 = document.querySelector(".next3");
     let btnSubmit = document.querySelector(".submit");
+    let btnChangeUser = document.querySelector(".changeUser");
     const radios = document.querySelectorAll("input[type='radio'][name='tip']");
     let date = document.querySelectorAll("input[type='date'][name='date']");
 
@@ -35,11 +36,40 @@ $(document).ready(function() {
     const hide = (element) => document.querySelector(element).classList.add("hidden");
     const reveal = (element) => document.querySelector(element).classList.remove("hidden");
     const areValidUsernameAndCode = (username, accessCode) => {
-            return username.value !== null && accessCode.value !== null &&
-                username.value.length > 1 && accessCode.value.length === 6
-        }
-        // prosledjuje se input polje
+        return username.value !== null && accessCode.value !== null &&
+            username.value.length > 1 && accessCode.value.length === 6
+    }
 
+    // funkcija koja na osnovu prosledjenog input polja proverava da li je uneseni datum validan
+    const isValidDate = (dateInput) => {
+            let selectedDate = collectDate(dateInput);
+            let currentDate = new Date();
+            if (currentDate < selectedDate &&
+                selectedDate.getFullYear != null && selectedDate.getFullYear != undefined &&
+                selectedDate.getMonth != null && selectedDate.getMonth != undefined &&
+                selectedDate.getDate != null && selectedDate.getDate != undefined) {
+                console.log("godina: " + selectedDate.getFullyear);
+                console.log("mesec: " + selectedDate.getMonth);
+                console.log("dan: " + selectedDate.getDate);
+
+                return true;
+            } else return false;
+        }
+        // funkcija koja na osnovu prosledjenog input pola za datum vraca datum koji je unesen
+    const collectDate = (dateInput) => {
+        let date = dateInput.val().split("-");
+        day = date[2];
+        console.log("dan " + day)
+        month = date[1];
+        console.log("mesec " + month)
+        year = date[0];
+        console.log("godina " + year)
+        let selectedDate = new Date()
+        selectedDate.setFullYear(date[0]);
+        selectedDate.setMonth(date[1] - 1); //iz nekog razloga vraca mesec za jedan vise
+        selectedDate.setDate(date[2]);
+        return selectedDate;
+    }
 
     // <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
     // ovde resavamo event listener-e
@@ -50,7 +80,7 @@ $(document).ready(function() {
             reveal("#div2");
             newTraining.user = username.value;
             newTraining.code = accessCode.value;
-            // scrollTo("#div2");
+            window.scrollTo(0, 300);
 
             // treba mi da podesim visinu nakon pritiska da bude min-content
             document.querySelector(".pageTermini").style.height = "100%";
@@ -76,50 +106,21 @@ $(document).ready(function() {
         hide(".error2");
     }))
 
-    // ovo je sad dugme posle onih radio dugmica
+    // klikom na dugme dalje se otkriva unos za datum ukoliko je neka od vrsta treninga oznacena
     btnNext2.addEventListener('click', () => {
         if (isChecked) {
             reveal("#div3");
-            // scrollTo("#div3");
+            window.scrollTo(0, 500);
 
         } else reveal(".error2");
     })
 
-    const isValidDate = (dateInput) => {
-        let selectedDate = collectDate(dateInput);
-        let currentDate = new Date();
-        if (currentDate < selectedDate &&
-            selectedDate.getFullYear != null && selectedDate.getFullYear != undefined &&
-            selectedDate.getMonth != null && selectedDate.getMonth != undefined &&
-            selectedDate.getDate != null && selectedDate.getDate != undefined) {
-            console.log("godina: " + selectedDate.getFullyear);
-            console.log("mesec: " + selectedDate.getMonth);
-            console.log("dan: " + selectedDate.getDate);
-
-            return true;
-        } else return false;
-    }
-
-    const collectDate = (dateInput) => {
-        let date = dateInput.val().split("-");
-        day = date[2];
-        console.log("dan " + day)
-        month = date[1];
-        console.log("mesec " + month)
-        year = date[0];
-        console.log("godina " + year)
-        let selectedDate = new Date()
-        selectedDate.setFullYear(date[0]);
-        selectedDate.setMonth(date[1] - 1); //iz nekog razloga vraca mesec za jedan vise
-        selectedDate.setDate(date[2]);
-        return selectedDate;
-    }
 
     btnNext3.addEventListener('click', () => {
 
         if (isValidDate($('#date'))) {
             reveal("#div4");
-            //     // scrollTo("#div4");
+            window.scrollTo(0, 900);
 
             newTraining.date = `${day}.${month}.${year}.`;
             hide(".error3");
@@ -130,25 +131,7 @@ $(document).ready(function() {
             hide(".submitSpace");
         }
 
-        // let currentDate = new Date();
-        // let selectedDate = collectDate($('#date'));
-        // if (currentDate > selectedDate) {
-        //     reveal(".error3");
-        //     console.log("greska datum");
-        // } else {
-        //     reveal("#div4");
-        //     // scrollTo("#div4");
-
-        //     newTraining.date = `${day}.${month}.${year}.`;
-        //     hide(".error3");
-        //     console.log("ovde se sakriva poruka o gresci");
-        // }
     })
-
-    // cim se promeni datum odmah se sklanja upozorenje ako je postojalo
-    // $('#date').addEventListener('change', () => {
-
-    // })
 
     const addCellToTable = (newRow, data) => {
         newCell = newRow.insertCell();
@@ -174,10 +157,18 @@ $(document).ready(function() {
         hide("#div3");
         hide("#div4");
         reveal(".tableSection");
+        reveal(".changeUser");
 
-        // kad se prikaze poruka za uspesan unos odmah nakon nekog vremena se gubi
         reveal(".success");
+        window.scrollTo(0, 300);
+        // kad se prikaze poruka za uspesan unos odmah nakon nekog vremena se gubi
         setTimeout(() => hide(".success"), 2500)
+    })
+
+    btnChangeUser.addEventListener('click', () => {
+        username.value = "";
+        accessCode.value = null;
+        console.log("brisanje sadrzaja inputa za ime i kod")
     })
 
 
