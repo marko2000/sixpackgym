@@ -21,6 +21,7 @@ nav {
     top: 0;
     height: 10vh;
     background-color: #000;
+    z-index: 11;
 }
 
 .logo img {
@@ -217,7 +218,7 @@ button a {
 /* ---------- Third section ---------- */
 
 .section3 {
-    height: 90vh;
+    height: max-content;
     background-color: rgba(177, 113, 219, .25);
 }
 
@@ -321,7 +322,7 @@ button a {
 /* ---------- Footer ---------- */
 
 footer {
-    height: 30vh;
+    height: max-content;
 }
 
 .footer-container {
@@ -702,6 +703,159 @@ input[type="date"] {
     letter-spacing: 0.1rem;
 }
 
+/*============================================================================================================================================================ */
+/* ===================================================================== POCETAK CSS-A ZA O NAMA =============================================== */
+/* ============================================================================================================================================================ */
+/* -------------- O Nama ------------------- */
+/* ----------- Div 1 ---------------*/
+.div1onama{
+    margin-top: 0;
+    margin-bottom: 0;
+    background-image: linear-gradient(37deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
+    height: auto;
+    
+    /* Podeljena prva sekcija i boja pozadine */
+}
+.div1onama h1{
+    margin: 0;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 0;
+}
+
+
+.container1onama{
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 0;
+    flex-wrap: wrap;
+    margin-top: 0;
+    max-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+.container11onama{
+    width:40%;
+    height: 100%;
+}
+.container12onama img{
+  width: 15rem;
+  height: 15rem;
+  padding-bottom: 8%;
+}
+#h21Div1onama{
+    padding-top:4% ;
+    font-size: 32px;
+    color: white;
+    margin-bottom: 0%;
+}
+#p1Div1onama{
+    
+    font-size: 21px;
+    color: white;
+    width: 45vw;
+    margin-top:0px;
+    padding-bottom: 8%;
+}
+/* Div 2 */
+.div2onama{
+    background-image: linear-gradient(294deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
+    margin: 0;
+    margin-top: 0;
+    /* height: 370px; */
+    height: auto;
+}
+
+
+.container2onama{
+    display: flex;
+    justify-content:space-evenly ;
+    align-items: center;
+    margin-top: 0;
+    flex-wrap: wrap-reverse;
+
+}
+#h21Div2onama{
+    margin-top:0 ;
+    margin-bottom: 4%;
+    margin-left: 20%;
+    font-size: 32px;
+    color: white;
+    padding-top: 15%;
+}  
+.container2onama img{
+    position: static;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 20px;   
+}
+#p1Div2onama{
+    margin-top:0 ;
+    margin-left: 20%;
+    font-size: 21px;
+    width: 45vw;
+    color: white;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+/* Div 3 */
+.div3onama{
+    margin-top: 0;
+    margin-bottom: 0;
+    background-image: linear-gradient(37deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
+    height: auto;
+}
+
+.container3onama {
+    display: flex;
+    justify-content:space-evenly ;
+    align-items: center;
+    margin-top: 0;
+    flex-wrap: wrap;
+    
+}
+.container3onama img{
+    width: 15rem;
+    height: 15rem;
+   
+}
+#h21Div3onama{
+    margin-top: 0; 
+    font-size: 32px;
+    color: white;
+    padding-top: 7%;   
+}
+#p1Div3onama{
+    font-size: 21px;
+    color: white;
+    width: 45vw;
+    margin-bottom: 0;
+    padding-bottom: 10%;
+}
+/* Div 4 */
+.div4onama{
+    margin-top: 0;
+    height: auto;
+    background-image:linear-gradient(to bottom, rgba(36,185,240,1) 80%, rgba(255,255,255,1) 100%);
+    
+    
+}
+#h21Div4onama{
+    text-align: center;
+    font-size: 38px;
+    margin-top: 0;
+    color: white;
+    margin-bottom: 3%;
+}
+
+/* ============================================================================================================================================================ */
+/* ===================================================================== KRAJ CSS-A ZA O NAMA =============================================== */
+/* ============================================================================================================================================================ */
+
 
 /* ----------------------------------------- */
 
@@ -832,6 +986,94 @@ input[type="date"] {
     .col-flex img {
         display: none;
     }
+    /* ========================================= O Nama =============================================== */
+    /* prva sekcija*/
+    .div1onama{
+        background-image: linear-gradient(135deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
+        
+    }
+    .container1onama{
+        flex-direction: column;
+        
+    }
+    .container1onama img{
+        height: 10rem;
+        width: 10rem;
+    }
+    .container11onama{
+        width: 90%;
+    }
+    #h21Div1onama{
+        text-align: center;
+    }
+    #p1Div1onama{
+        padding-top:5%;
+       text-align:justify;
+        font-size: 16px;
+        width: 100%;
+        
+    }
+
+    /* druga sekcija*/
+    .div2onama{
+        background-image: linear-gradient(228deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
+    }
+
+    .container2onama{
+        flex-direction: column;
+    }
+    .container2onama img{
+        height: 10rem;
+        width: 10rem;   
+    }
+
+    .container22onama{
+        order:2;
+        padding-bottom: 15%;
+    }
+    .container21onama{
+        order:1;
+        width: 90%;
+    }
+    #h21Div2onama{
+        text-align: center;
+        margin-left: 0;
+    }
+    #p1Div2onama{
+        padding-top:5%;
+       text-align:justify;
+        font-size: 16px;
+        width: 100%;
+        margin-left: 0;
+        
+    }
+
+    /* treca sekcija*/
+    .div3onama{
+        background-image: linear-gradient(135deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
+    }
+    .container3onama{
+        flex-direction: column;
+    }
+    .container3onama img{
+        height: 10rem;
+        width: 10rem;
+    }
+    .container31onama{
+        width: 90%;
+    }
+    #h21Div3onama{
+        text-align: center;
+    }
+    #p1Div3onama{
+        padding-top:5%;
+       text-align:justify;
+        font-size: 16px;
+        width: 100%;
+        
+    }
+    /* ================================================ Kraj za O nama =========================================================== */
+ 
 }
 
 
@@ -926,6 +1168,100 @@ input[type="date"] {
         height: max-content;
         padding-bottom: 5%;
     }
+
+    
+
+
+    /* ======================================== O Nama ============================================= */
+    
+    /* prva sekcija*/
+    .div1onama{
+        background-image: linear-gradient(135deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
+    }
+    .container1onama{
+        flex-direction: column;
+
+        
+    }
+    .container1onama img{
+        height: 10rem;
+        width: 10rem;
+    }
+    .container11onama{
+        width: 90%;
+        justify-content: center;
+    }
+    #h21Div1onama{
+        text-align: center;
+    }
+    #p1Div1onama{
+        padding-top:5%;
+       text-align:justify;
+        font-size: 16px;
+        width: 100%;
+        
+    }
+
+    /* druga sekcija*/
+    .div2onama{
+        background-image: linear-gradient(228deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
+    }
+
+    .container2onama{
+        flex-direction: column;
+    }
+    .container2onama img{
+        height: 10rem;
+        width: 10rem;   
+    }
+
+    .container22onama{
+        order:2;
+        padding-bottom: 15%;
+    }
+    .container21onama{
+        order:1;
+        width: 90%;
+    }
+    #h21Div2onama{
+        text-align: center;
+        margin-left: 0;
+    }
+    #p1Div2onama{
+        padding-top:5%;
+       text-align:justify;
+        font-size: 16px;
+        width: 100%;
+        margin-left: 0;
+        
+    }
+
+    /* treca sekcija*/
+    .div3onama{
+        background-image: linear-gradient(135deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
+    }
+    .container3onama{
+        flex-direction: column;
+    }
+    .container3onama img{
+        height: 10rem;
+        width: 10rem;
+    }
+    .container31onama{
+        width: 90%;
+    }
+    #h21Div3onama{
+        text-align: center;
+    }
+    #p1Div3onama{
+        padding-top:5%;
+       text-align:justify;
+        font-size: 16px;
+        width: 100%;
+        
+    }
+    /* ================================= Kraj za O nama================================= */
+
 }
 
 
