@@ -859,6 +859,85 @@ input[type="date"] {
 
 /* ----------------------------------------- */
 
+/* ===========================================================================================================
+=========================== CSS ZA PROGRAM =================================================================
+======================================================================================================= */
+
+.program-body {
+    background: #1789FC;
+    background-image: url("../img/background-program.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.program {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.3rem;
+    font-size: 3rem;
+    /* padding-bottom: 10vh; */
+    padding-top: 5vh;
+}
+.container-program {
+    background: #296EB4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 5% 15%;
+    /* border: 1px solid #000; */
+    border-radius: 10px;
+}
+.container-program img {
+    width: 30%;
+    margin: 2% 0;
+    /* border-radius: 20px; */
+}
+.desc {
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 60%;
+}
+.desc h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 0.3rem  ;
+}
+.desc p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    padding: 6% 0;
+    color: #fff;
+}
+.desc button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1.5% 4%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #FDB833;
+    /* transform: scale(1.2); */
+}
+.desc button:hover {
+    background: #FFD07B;
+    border: 1px solid #000;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+.desc button a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* ===============================================================================================
+======================== KRAJ CSS-a ZA PROGRAM ====================================================
+=============================================================================================== */
+
 
 /* Media query ---- RESPONZIVNOST */
 
