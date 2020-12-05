@@ -44,7 +44,7 @@ $(document).ready(function() {
     let date = document.querySelectorAll("input[type='date'][name='date']");
 
     let newTraining = {};
-    const trainers = ["Luka Marinkovic", "Vasilije Mijuskovic", "Marko Milenkovic"]
+    const trainers = ["Luka Marinković", "Vasilije Mijušković", "Marko Milenković"]
 
 
     // treba nam da vratimo nekog random trenera iz niza trenera
@@ -157,6 +157,7 @@ $(document).ready(function() {
 
     btnSubmit.addEventListener('click', () => {
         let newRow = document.querySelector(".table").insertRow();
+        newRow.classList.add("newTrainings");
 
         // ovde u red dodajemo vrstu treninga
         addCellToTable(newRow, newTraining.type);
@@ -185,7 +186,12 @@ $(document).ready(function() {
     btnChangeUser.addEventListener('click', () => {
         username.value = "";
         accessCode.value = null;
-        console.log("brisanje sadrzaja inputa za ime i kod")
+        console.log("brisanje sadrzaja inputa za ime i kod");
+        let rows = document.querySelectorAll(".newTrainings");
+        for (const row of rows) {
+            row.remove();
+        }
+        hide(".tableSection");
     })
 
 

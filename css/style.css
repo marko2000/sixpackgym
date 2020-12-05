@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 * {
     margin: 0;
     padding: 0;
-    /* font-size: 10px; */
     box-sizing: border-box;
 }
-
+html, body {
+    overflow-x: hidden;
+}
 
 /* ---------- Navbar ---------- */
 
@@ -16,11 +18,11 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 10%;
-    background-color: transparent;
+    /* background-color: transparent; */
     position: sticky;
     top: 0;
     height: 10vh;
-    background-color: #000;
+    background-color:#012649;
     z-index: 11;
 }
 
@@ -56,12 +58,13 @@ nav {
 
 .menu li a.active,
 .menu li a:hover {
-    background: blue;
-    color: #fff;
+    background:#f9caa7;
+    color: #012649;
 }
 
 .black {
-    background: rgba(0, 0, 0, .7);
+    background: #03396c;
+    opacity: .7;
     transition: 1s all;
 }
 
@@ -122,7 +125,7 @@ nav .icon {
 }
 
 .text {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #fff;
     font-size: 4rem;
     /* padding-top: 5%; */
@@ -135,27 +138,29 @@ nav .icon {
 .btnFirstSection {
     width: 20%;
     margin-top: 4%;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     padding: 0.5rem 2rem;
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 0.1rem;
     border-radius: 10px;
     border: none;
-    background-color: rgb(218, 214, 214);
+    background-color: #f8a86b;
 }
 
 .btnFirstSection:hover {
     border: 1px solid rgb(90, 90, 90);
-    background-color: rgb(168, 166, 166);
+    background-color: #f69042;
     box-shadow: 0px 1px 1px 1px rgb(151, 150, 150);
-    transform: translateY(-1px);
+    /* transform: translateY(-1px); */
     cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
 }
 
 button a {
     text-decoration: none;
-    color: black;
+    color: #012649;
 }
 
 
@@ -168,7 +173,9 @@ button a {
     font-size: 3rem;
     text-align: center;
     padding-top: 5%;
-    font-family: 'Roboto', sans-serif;
+    padding-bottom: 5%;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.3rem;
     /* height: 80vh; */
 }
 
@@ -197,7 +204,7 @@ button a {
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
-    background-color: aqua;
+    background-color: #a8cafa;
     /* color: #fff; */
 }
 
@@ -209,6 +216,7 @@ button a {
 .card h2 {
     padding: 10% 0;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.7rem;
 }
 
 
@@ -219,7 +227,7 @@ button a {
 
 .section3 {
     height: max-content;
-    background-color: rgba(177, 113, 219, .25);
+    background-color:#dfe3ee;
 }
 
 .container3 {
@@ -227,14 +235,17 @@ button a {
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    padding: 0 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
     flex-wrap: wrap;
 }
 
 .section3 h1 {
     font-size: 3rem;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.3rem;
     padding-bottom: 5%;
     padding-top: 5%;
 }
@@ -276,9 +287,12 @@ button a {
 
 .contact form textarea {
     resize: none;
-    background-color: blue;
+    background-color: #cacaca;
     border: none;
     border-radius: 10px;
+    outline: none;
+    font-size: 1.5rem;
+    padding: 5%;
 }
 
 .btnContact {
@@ -297,8 +311,8 @@ button a {
 }
 
 .btnContact:hover {
-    background-color: blue;
-    color: white;
+    background-color: rgb(1, 182, 16);
+    color: #000;
 }
 
 .map {
@@ -313,6 +327,7 @@ button a {
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 5%;
     padding-top: 0;
+    font-size: 1.7rem;
 }
 
 
@@ -327,12 +342,12 @@ footer {
 
 .footer-container {
     height: 100%;
-    background-color: red;
+    background-color: #2b2b28;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding: 3% 15%;
+    color: #fff;
 }
 
 .col {
@@ -370,12 +385,12 @@ footer {
 
 .list-footer li span a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
 .icon {
     width: 100%;
-    color: blue;
+    color: #fff;
     flex-basis: auto;
 }
 
@@ -410,13 +425,14 @@ footer {
 /* STILOVI ZA STRANICU <<TERMINI>> */
 
 .pageTermini {
-    height: 100vh;
+    /* height: 100vh; */
     /* height: 100%; */
-    background-image: linear-gradient(rgb(57, 121, 194), rgb(170, 206, 240));
+    background-image: linear-gradient(217deg, #2193b0 0%, #6dd5ed 100%);
     background-size: cover;
     background-position: absolute;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin: 0;
 }
 
 
@@ -426,35 +442,6 @@ footer {
     visibility: hidden;
     height: 0;
 }
-
-
-/* ----------------------------------------- */
-
-
-/* u ovom delu se nalazi stilizacija NAVBARA */
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10%;
-    background-color: transparent;
-    position: sticky;
-    top: 0;
-    height: 10vh;
-    background-color: #000;
-}
-
-.logo img {
-    /* height: 15vh; */
-    cursor: pointer;
-    min-height: 16vh;
-    max-height: 16vh;
-    padding-top: 20%;
-}
-
-
-/* ----------------------------------------- */
 
 
 /* u ovom delu se nalazi stilizacija dugmica */
@@ -541,7 +528,7 @@ nav {
     height: min-content;
 }
 
-.form #div1,
+#div1,
 #div2,
 #div3,
 #div4 {
@@ -626,17 +613,18 @@ input[type="text"] {
     width: 100%;
     text-align: center;
     /* margin-bottom: 15px; */
-    line-height: 2rem;
-    font-size: 1.5rem;
+    line-height: 3rem;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
 }
 
 .form #div2 .inputSpace #radioinputs {
     display: flex;
     flex-direction: row;
     /* mozda ove ne treba ovako .... */
-    margin-left: -10%;
+    /* margin-left: -10%; */
     padding-top: 3%;
-    width: 120%;
+    /* width: 120%; */
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5%;
@@ -711,7 +699,7 @@ input[type="date"] {
 .div1onama{
     margin-top: 0;
     margin-bottom: 0;
-    background-image: linear-gradient(37deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
+    background-image: linear-gradient(37deg, #2193b0 0%, #6dd5ed 100%);
     height: auto;
     
     /* Podeljena prva sekcija i boja pozadine */
@@ -719,10 +707,12 @@ input[type="date"] {
 .div1onama h1{
     margin: 0;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.3rem;
+    font-size: 3.5rem;
     color: white;
     margin-bottom: 0;
+    padding: 3% 0%;
 }
 
 
@@ -748,13 +738,14 @@ input[type="date"] {
   padding-bottom: 8%;
 }
 #h21Div1onama{
+    font-family: "Montserrat",sans-serif;
     padding-top:4% ;
     font-size: 32px;
     color: white;
     margin-bottom: 0%;
 }
 #p1Div1onama{
-    
+    font-family: "Montserrat",sans-serif;
     font-size: 21px;
     color: white;
     width: 45vw;
@@ -763,7 +754,7 @@ input[type="date"] {
 }
 /* Div 2 */
 .div2onama{
-    background-image: linear-gradient(294deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
+    background-image: linear-gradient(37deg, #6dd5ed 0%, #2193b0 100%);
     margin: 0;
     margin-top: 0;
     /* height: 370px; */
@@ -780,6 +771,7 @@ input[type="date"] {
 
 }
 #h21Div2onama{
+    font-family: "Montserrat",sans-serif;
     margin-top:0 ;
     margin-bottom: 4%;
     margin-left: 20%;
@@ -794,6 +786,7 @@ input[type="date"] {
     border-radius: 20px;   
 }
 #p1Div2onama{
+    font-family: "Montserrat",sans-serif;
     margin-top:0 ;
     margin-left: 20%;
     font-size: 21px;
@@ -806,7 +799,7 @@ input[type="date"] {
 .div3onama{
     margin-top: 0;
     margin-bottom: 0;
-    background-image: linear-gradient(37deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
+    background-image: linear-gradient(37deg, #2193b0 0%, #6dd5ed 100%);
     height: auto;
 }
 
@@ -824,12 +817,14 @@ input[type="date"] {
    
 }
 #h21Div3onama{
+    font-family: "Montserrat",sans-serif;
     margin-top: 0; 
     font-size: 32px;
     color: white;
     padding-top: 7%;   
 }
 #p1Div3onama{
+    font-family: "Montserrat",sans-serif;
     font-size: 21px;
     color: white;
     width: 45vw;
@@ -840,16 +835,17 @@ input[type="date"] {
 .div4onama{
     margin-top: 0;
     height: auto;
-    background-image:linear-gradient(to bottom, rgba(36,185,240,1) 80%, rgba(255,255,255,1) 100%);
+    background-image:linear-gradient(to top, #6dd5ed 0%, #2193b0 100%);
     
     
 }
 #h21Div4onama{
+    font-family: "Montserrat",sans-serif;
     text-align: center;
-    font-size: 38px;
+    font-size: 3rem;
     margin-top: 0;
     color: white;
-    margin-bottom: 3%;
+    padding: 3% 0;
 }
 
 /* ============================================================================================================================================================ */
@@ -864,21 +860,21 @@ input[type="date"] {
 ======================================================================================================= */
 
 .program-body {
-    background: #1789FC;
+    /* background: #1789FC; */
     background-image: url("../img/background-program.jpg");
     background-position: center;
     background-size: cover;
 }
 .program {
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     letter-spacing: 0.3rem;
     font-size: 3rem;
     /* padding-bottom: 10vh; */
     padding-top: 5vh;
 }
 .container-program {
-    background: #296EB4;
+    background: #4c91d6;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -906,9 +902,9 @@ input[type="date"] {
     letter-spacing: 0.3rem  ;
 }
 .desc p {
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.4rem;
-    padding: 6% 0;
+    padding: 4% 0;
     color: #fff;
 }
 .desc button {
@@ -960,7 +956,12 @@ input[type="date"] {
     }
     .table tr th {
         padding: 0;
-        font-size: 1.7rem;
+        font-size: 1.2rem;
+    }
+    .table tr td {
+        /* padding: 1rem 0; */
+        font-size: 1rem;
+        width: auto;
     }
     /* -------------------------------- */
     /* hamburger */
@@ -1176,6 +1177,7 @@ input[type="date"] {
         font-size: 1.5rem;
         color: #fff;
         letter-spacing: 0.3rem  ;
+        text-align: center;
     }
     .desc p {
         font-size: 1rem;
@@ -1198,6 +1200,15 @@ input[type="date"] {
     /* vezano za stranicu TERMINI */
     .inputSpace {
         width: 60%;
+    }
+    .table tr th {
+        padding: 0;
+        font-size: 1.2rem;
+    }
+    .table tr td {
+        /* padding: 1rem 0; */
+        font-size: 1rem;
+        width: auto;
     }
     /* -------------------------------- */
     /* hamburger */
