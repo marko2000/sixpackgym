@@ -1584,12 +1584,12 @@ input[type="date"] {
         align-items: center;
     }
     .container-program img {
-        width: 40%;
+        width: 45%;
         border-radius: 10px;
     }
     .desc {
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         width: 50%;
     }
     .desc h2 {
@@ -1598,15 +1598,56 @@ input[type="date"] {
         letter-spacing: 0.3rem  ;
     }
     .desc p {
-        padding: 5% 0;
+        padding: 4% 0;
         font-size: 1.2rem;
+        line-height: 1.6rem;
+        /* text-align: center; */
+        letter-spacing: 0.1rem;
+    }
+    .desc button {
+        font-size: 1.2rem;
+        padding: 2% 5%;
+    }
+    /* ====================================== KRAJ PROGRAM.HTML ================================== */
+}
+
+@media only screen and (min-width: 1551px) and (max-width: 1900px) {
+    .program {
+        letter-spacing: 0.3rem;
+        font-size: 3rem;
+    }
+    .container-program {
+        flex-direction: row;
+        padding-top: 5%;
+        justify-content: space-between;
+        padding: 2% 3%;
+        margin: 2% 15% 5% 15%;
+        align-items: center;
+    }
+    .container-program img {
+        width: 45%;
+        border-radius: 10px;
+    }
+    .desc {
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 50%;
+    }
+    .desc h2 {
+        font-size: 2.2rem;
+        color: #fff;
+        letter-spacing: 0.3rem  ;
+    }
+    .desc p {
+        padding: 4% 0;
+        font-size: 1.4rem;
         line-height: 1.7rem;
-        text-align: center;
+        font-weight: lighter;
+        /* text-align: center; */
         letter-spacing: 0.1rem;
     }
     .desc button {
         font-size: 1.4rem;
         padding: 2% 5%;
     }
-    /* ====================================== KRAJ PROGRAM.HTML ================================== */
-}
+} 
