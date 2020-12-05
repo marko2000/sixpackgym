@@ -11,10 +11,7 @@
 
 /* ================================================================= KRAJ ZA O NAMA ========================================================*/ 
 
-
-
-
-
+// NAVBAR
 $(window).on('scroll', function() {
     if ($(window).scrollTop()) {
         $('nav').addClass('black');
@@ -23,13 +20,9 @@ $(window).on('scroll', function() {
     }
 })
 
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-// SKRIPTA ZA STRANICU TERMINI>HTML
+// =============================== TERMINI.HTML ============================================
 
 $(document).ready(function() {
-
-    // jQuery methods go here...
-    // stranica Termini
 
     //selektori za stranicu termini:
 
@@ -46,8 +39,6 @@ $(document).ready(function() {
     let newTraining = {};
     const trainers = ["Luka Marinković", "Vasilije Mijušković", "Marko Milenković"]
 
-
-    // treba nam da vratimo nekog random trenera iz niza trenera
     const getrandomTrainer = (trainers) => trainers[Math.floor(Math.random() * trainers.length)]
 
     const hide = (element) => document.querySelector(element).classList.add("hidden");
@@ -72,7 +63,7 @@ $(document).ready(function() {
                 return true;
             } else return false;
         }
-        // funkcija koja na osnovu prosledjenog input pola za datum vraca datum koji je unesen
+    // funkcija koja na osnovu prosledjenog input pola za datum vraca datum koji je unesen
     const collectDate = (dateInput) => {
         let date = dateInput.val().split("-");
         day = date[2];
@@ -88,9 +79,7 @@ $(document).ready(function() {
         return selectedDate;
     }
 
-    // <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-    // ovde resavamo event listener-e
-
+    // EVENT LISTENERS
 
     btnNext1.addEventListener('click', () => {
         if (areValidUsernameAndCode(username, accessCode)) {
@@ -99,7 +88,6 @@ $(document).ready(function() {
             newTraining.code = accessCode.value;
             window.scrollTo(0, 300);
 
-            // treba mi da podesim visinu nakon pritiska da bude min-content
             document.querySelector(".pageTermini").style.height = "100%";
         } else reveal(".error1")
 
@@ -132,7 +120,6 @@ $(document).ready(function() {
         } else reveal(".error2");
     })
 
-
     btnNext3.addEventListener('click', () => {
 
         if (isValidDate($('#date'))) {
@@ -141,13 +128,10 @@ $(document).ready(function() {
 
             newTraining.date = `${day}.${month}.${year}.`;
             hide(".error3");
-            console.log("ovde se sakriva poruka o gresci");
         } else {
             reveal(".error3");
-            console.log("greska datum");
             hide(".submitSpace");
         }
-
     })
 
     const addCellToTable = (newRow, data) => {
@@ -167,7 +151,6 @@ $(document).ready(function() {
         // dodajemo izabranog trenera
         addCellToTable(newRow, getrandomTrainer(trainers));
 
-        /////////////////////
         // sad resetujemo sve ulaze sem korisnickog imena i koda
         $('#date').val("");
         document.querySelectorAll("input[type=radio][name=tip]").forEach((el) => el.checked = false);
@@ -186,7 +169,6 @@ $(document).ready(function() {
     btnChangeUser.addEventListener('click', () => {
         username.value = "";
         accessCode.value = null;
-        console.log("brisanje sadrzaja inputa za ime i kod");
         let rows = document.querySelectorAll(".newTrainings");
         for (const row of rows) {
             row.remove();
@@ -197,10 +179,7 @@ $(document).ready(function() {
 
 });
 
-
-
-// -----------------------------------------
-// HAMBURGER
+// NAVBAR ZA MEDIA QUERRY
 let isHamburgerClicked = false;
 
 function myFunction() {

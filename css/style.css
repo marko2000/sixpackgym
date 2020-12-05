@@ -7,18 +7,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
-    overflow-x: hidden;
-}
 
-/* ---------- Navbar ---------- */
+/* ===============================================================================================
+============================================== NAVBAR ============================================
+=============================================================================================== */
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10%;
-    /* background-color: transparent; */
     position: sticky;
     top: 0;
     height: 10vh;
@@ -27,7 +25,6 @@ nav {
 }
 
 .logo img {
-    /* height: 15vh; */
     cursor: pointer;
     min-height: 16vh;
     max-height: 16vh;
@@ -68,38 +65,17 @@ nav {
     transition: 1s all;
 }
 
-
-/* Add a black background color to the top navigation
-
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-} */
-
-
-/* Style the links inside the navigation bar */
-
-
-/* .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-} */
-
-
-/* Hide the link that should open and close the topnav on small screens */
-
 nav .icon {
     display: none;
 }
 
+/* ===============================================================================================
+========================================== KRAJ ZA NAVBAR ========================================
+=============================================================================================== */
 
-/* ---------- End of navbar ---------- */
-
+/* ===============================================================================================
+================================== INDEX.HTML ====================================================
+=============================================================================================== */
 
 /* ---------- First section ---------- */
 
@@ -107,9 +83,7 @@ nav .icon {
     width: 100%;
     height: 80vh;
     display: flex;
-    /* padding-left: 10%; */
     justify-content: center;
-    /* flex-direction: column; */
     background: url('../img/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -128,8 +102,6 @@ nav .icon {
     font-family: 'Lato', sans-serif;
     color: #fff;
     font-size: 4rem;
-    /* padding-top: 5%; */
-    /* padding-left: 20%; */
     font-weight: 800;
     letter-spacing: 1px;
     text-shadow: 2px 2px rgba(255, 255, 255, 0.2);
@@ -152,7 +124,6 @@ nav .icon {
     border: 1px solid rgb(90, 90, 90);
     background-color: #f69042;
     box-shadow: 0px 1px 1px 1px rgb(151, 150, 150);
-    /* transform: translateY(-1px); */
     cursor: pointer;
     transform: scale(1.1);
     transition-duration: 0.5s;
@@ -163,9 +134,7 @@ button a {
     color: #012649;
 }
 
-
 /* ---------- End of first section ---------- */
-
 
 /* ---------- Second section ---------- */
 
@@ -176,7 +145,6 @@ button a {
     padding-bottom: 5%;
     font-family: 'Lato', sans-serif;
     letter-spacing: 0.3rem;
-    /* height: 80vh; */
 }
 
 .container2 {
@@ -186,8 +154,6 @@ button a {
     justify-content: space-between;
     align-items: center;
     z-index: 1;
-    /* padding: 0 5%; */
-    /* margin-top: 100px; */
     padding-left: 10%;
     padding-right: 10%;
     margin-bottom: 5%;
@@ -195,17 +161,12 @@ button a {
 }
 
 .card {
-    /* flex: 1; */
-    /* padding: 0 5%; */
-    /* width: 50px; */
-    /* border: 2px solid #000; */
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
     background-color: #a8cafa;
-    /* color: #fff; */
 }
 
 .card img {
@@ -219,9 +180,7 @@ button a {
     font-size: 1.7rem;
 }
 
-
 /* ---------- End of second section ---------- */
-
 
 /* ---------- Third section ---------- */
 
@@ -261,19 +220,17 @@ button a {
     align-items: flex-start;
 }
 
-.input {
+.input , #contact-name{
     border: none;
     border-bottom: 1px solid #000;
     width: 100%;
     line-height: 1.7rem;
     font-size: 1.3rem;
-    /* text-indent: 0.7rem; */
     background-color: transparent;
 }
 
 .input:focus {
     outline: none;
-    /* background-color: rgb(177, 113, 219); */
     background: linear-gradient(0deg, rgba(177, 113, 219, .35) 2%, rgba(177, 113, 219, .30) 48%, rgba(177, 113, 219, .25) 100%);
     border-radius: 5px;
 }
@@ -330,11 +287,15 @@ button a {
     font-size: 1.7rem;
 }
 
-
 /* ---------- End of third section ---------- */
 
+/* ===============================================================================================
+================================== KRAJ ZA INDEX.HTML ============================================
+=============================================================================================== */
 
-/* ---------- Footer ---------- */
+/* ===============================================================================================
+============================================== FOOTER ============================================
+=============================================================================================== */
 
 footer {
     height: max-content;
@@ -351,7 +312,6 @@ footer {
 }
 
 .col {
-    /* border: 1px solid #000; */
     width: 25%;
     height: 50%;
 }
@@ -360,7 +320,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* width: 100%; */
 }
 
 .img-footer {
@@ -415,18 +374,16 @@ footer {
     font-family: 'Montserrat', sans-serif;
 }
 
-
-/* ---------- End of footer ---------- */
-
-
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* ===============================================================================================
+====================================== KRAJ ZA FOOTER ============================================
+=============================================================================================== */
 
 
-/* STILOVI ZA STRANICU <<TERMINI>> */
+/* ===============================================================================================
+======================================== TERMINI.HTML ============================================
+=============================================================================================== */
 
 .pageTermini {
-    /* height: 100vh; */
-    /* height: 100%; */
     background-image: linear-gradient(217deg, #2193b0 0%, #6dd5ed 100%);
     background-size: cover;
     background-position: absolute;
@@ -434,21 +391,12 @@ footer {
     background-attachment: fixed;
     margin: 0;
 }
-
-
-/* ova klasa je za sve one divove koji se pojavljuju nakon klika dugmica */
-
 .hidden {
     visibility: hidden;
     height: 0;
 }
-
-
-/* u ovom delu se nalazi stilizacija dugmica */
-
 .next {
     border: none;
-    /* max-width: 9rem; */
     width: 70%;
     margin: 5% 15%;
     padding: 0.4rem 0;
@@ -459,7 +407,6 @@ footer {
     font-size: 2rem;
     letter-spacing: 0.2rem;
 }
-
 .next:hover {
     color: white;
     border: 1px solid rgb(16, 48, 105);
@@ -468,7 +415,6 @@ footer {
     transform: translateY(-1px);
     cursor: pointer;
 }
-
 .submit {
     border: none;
     width: 25%;
@@ -481,7 +427,6 @@ footer {
     font-size: 2rem;
     letter-spacing: 0.2rem;
 }
-
 .submit:hover {
     color: white;
     border: 1px solid rgb(33, 83, 20);
@@ -490,7 +435,6 @@ footer {
     transform: translateY(-1px);
     cursor: pointer;
 }
-
 .changeUser button {
     border: none;
     width: 70%;
@@ -503,7 +447,6 @@ footer {
     font-size: 2rem;
     letter-spacing: 0.2rem;
 }
-
 .changeUser button:hover {
     color: white;
     border: 1px solid rgb(87, 70, 16);
@@ -512,13 +455,6 @@ footer {
     transform: translateY(-1px);
     cursor: pointer;
 }
-
-
-/* ----------------------------------------- */
-
-
-/* ovaj deo se odnosi na prostor oko pola za unos */
-
 .form {
     display: flex;
     flex-direction: column;
@@ -527,7 +463,6 @@ footer {
     padding-top: 10%;
     height: min-content;
 }
-
 #div1,
 #div2,
 #div3,
@@ -537,17 +472,9 @@ footer {
     justify-content: space-around;
     align-items: center;
 }
-
 .inputSpace {
     width: 30%;
 }
-
-
-/* ----------------------------------------- */
-
-
-/* ovaj deo se odnosi na to kako ce izgledati poruke kad je nesto uspesno i kad neje */
-
 .form div .error {
     display: flex;
     flex-direction: row;
@@ -561,7 +488,6 @@ footer {
     border-radius: 1rem;
     text-align: center;
 }
-
 .success {
     display: flex;
     flex-direction: row;
@@ -575,13 +501,6 @@ footer {
     font-size: 1.7rem;
     text-align: center;
 }
-
-
-/* ----------------------------------------- */
-
-
-/* stil za prostor gde je dugme ZAKAZI*/
-
 .submitSpace {
     width: 100%;
     display: flex;
@@ -590,72 +509,44 @@ footer {
     margin-bottom: 0;
     background-color: transparent;
 }
-
-
-/* ----------------------------------------- */
-
-
-/* konkretni stilovi za label i za input */
-
 label {
-    /* padding-bottom: 5%; */
     font-size: 1.7rem;
 }
-
 input {
     margin-bottom: 2.5%;
 }
-
 input[type="text"] {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid black;
     width: 100%;
     text-align: center;
-    /* margin-bottom: 15px; */
     line-height: 3rem;
     font-size: 2rem;
     letter-spacing: 0.2rem;
 }
-
 .form #div2 .inputSpace #radioinputs {
     display: flex;
     flex-direction: row;
-    /* mozda ove ne treba ovako .... */
-    /* margin-left: -10%; */
     padding-top: 3%;
-    /* width: 120%; */
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5%;
 }
-
-
-/* stilizujemo innptu za accessCode */
-
 #accessCode {
     padding: 0.4rem 0;
     letter-spacing: 2rem;
     font-size: 2rem;
     font-weight: 800;
 }
-
 input[type="date"] {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid black;
     width: 100%;
-    /* margin-bottom: 5%; */
     line-height: 2rem;
     font-size: 1.5rem;
 }
-
-
-/* ----------------------------------------- */
-
-
-/* sredjivanje tabele */
-
 .tableSection {
     display: flex;
     flex-direction: column;
@@ -664,19 +555,16 @@ input[type="date"] {
     background-color: transparent;
     padding-bottom: 10%;
 }
-
 .tableSection h2 {
     letter-spacing: 0.2rem;
     font-size: 2.5rem;
     color: rgb(51, 91, 165);
 }
-
 .table tr th {
     width: 20%;
     padding: 1rem 0;
     font-size: 2rem;
 }
-
 .table tr td {
     text-align: center;
     padding: 1rem 0;
@@ -685,24 +573,22 @@ input[type="date"] {
     border-radius: 25px;
     font-size: 1.7rem;
 }
-
 .table tr td:first-child {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
 }
+/* ===============================================================================================
+======================================== KRAJ ZA TERMINI.HTML ====================================
+=============================================================================================== */
 
-/*============================================================================================================================================================ */
-/* ===================================================================== POCETAK CSS-A ZA O NAMA =============================================== */
-/* ============================================================================================================================================================ */
-/* -------------- O Nama ------------------- */
-/* ----------- Div 1 ---------------*/
+/* ===============================================================================================
+======================================== O-NAMA.HTML =============================================
+=============================================================================================== */
 .div1onama{
     margin-top: 0;
     margin-bottom: 0;
     background-image: linear-gradient(37deg, #2193b0 0%, #6dd5ed 100%);
     height: auto;
-    
-    /* Podeljena prva sekcija i boja pozadine */
 }
 .div1onama h1{
     margin: 0;
@@ -714,8 +600,6 @@ input[type="date"] {
     margin-bottom: 0;
     padding: 3% 0%;
 }
-
-
 .container1onama{
     display: flex;
     justify-content:space-around ;
@@ -752,16 +636,12 @@ input[type="date"] {
     margin-top:0px;
     padding-bottom: 8%;
 }
-/* Div 2 */
 .div2onama{
     background-image: linear-gradient(37deg, #6dd5ed 0%, #2193b0 100%);
     margin: 0;
     margin-top: 0;
-    /* height: 370px; */
     height: auto;
 }
-
-
 .container2onama{
     display: flex;
     justify-content:space-evenly ;
@@ -795,26 +675,22 @@ input[type="date"] {
     padding-bottom: 50px;
     margin-bottom: 50px;
 }
-/* Div 3 */
 .div3onama{
     margin-top: 0;
     margin-bottom: 0;
     background-image: linear-gradient(37deg, #2193b0 0%, #6dd5ed 100%);
     height: auto;
 }
-
 .container3onama {
     display: flex;
     justify-content:space-evenly ;
     align-items: center;
     margin-top: 0;
     flex-wrap: wrap;
-    
 }
 .container3onama img{
     width: 15rem;
     height: 15rem;
-   
 }
 #h21Div3onama{
     font-family: "Montserrat",sans-serif;
@@ -831,13 +707,10 @@ input[type="date"] {
     margin-bottom: 0;
     padding-bottom: 10%;
 }
-/* Div 4 */
 .div4onama{
     margin-top: 0;
     height: auto;
     background-image:linear-gradient(to top, #6dd5ed 0%, #2193b0 100%);
-    
-    
 }
 #h21Div4onama{
     font-family: "Montserrat",sans-serif;
@@ -847,20 +720,16 @@ input[type="date"] {
     color: white;
     padding: 3% 0;
 }
+/* ===============================================================================================
+======================================== KRAJ ZA O-NAMA.HTML =====================================
+=============================================================================================== */
 
-/* ============================================================================================================================================================ */
-/* ===================================================================== KRAJ CSS-A ZA O NAMA =============================================== */
-/* ============================================================================================================================================================ */
 
-
-/* ----------------------------------------- */
-
-/* ===========================================================================================================
-=========================== CSS ZA PROGRAM =================================================================
-======================================================================================================= */
+/* ===============================================================================================
+======================================== PROGRAM.HTML ============================================
+=============================================================================================== */
 
 .program-body {
-    /* background: #1789FC; */
     background-image: url("../img/background-program.jpg");
     background-position: center;
     background-size: cover;
@@ -870,7 +739,6 @@ input[type="date"] {
     font-family: 'Lato', sans-serif;
     letter-spacing: 0.3rem;
     font-size: 3rem;
-    /* padding-bottom: 10vh; */
     padding-top: 5vh;
 }
 .container-program {
@@ -880,13 +748,11 @@ input[type="date"] {
     align-items: center;
     flex-direction: row;
     margin: 5% 15%;
-    /* border: 1px solid #000; */
     border-radius: 10px;
 }
 .container-program img {
     width: 30%;
     margin: 2% 0;
-    /* border-radius: 20px; */
 }
 .desc {
     display: flex;
@@ -917,7 +783,6 @@ input[type="date"] {
     outline: none;
     cursor: pointer;
     background: #FDB833;
-    /* transform: scale(1.2); */
 }
 .desc button:hover {
     background: #FFD07B;
@@ -929,42 +794,20 @@ input[type="date"] {
     text-decoration: none;
     color: #000;
 }
-
 /* ===============================================================================================
-======================== KRAJ CSS-a ZA PROGRAM ====================================================
+======================================== KRAJ ZA PROGRAM.HTML ====================================
 =============================================================================================== */
 
 
-/* Media query ---- RESPONZIVNOST */
+/* ===============================================================================================
+======================================== MEDIA QUERRY ============================================
+=============================================================================================== */
 
 
 /* Small devices (phones, 600px and below) */
 
 @media only screen and (max-width: 600px) {
-    /* vezano za stranicu TERMINI */
-    .submit {
-        font-size: 1.5rem;
-        letter-spacing: 0.1rem;
-    }
-    .inputSpace {
-        width: 70%;
-    }
-    .form #div2 .inputSpace #radioinputs {
-        flex-direction: column;
-        margin-left: 30%;
-        align-items: flex-start;
-    }
-    .table tr th {
-        padding: 0;
-        font-size: 1.2rem;
-    }
-    .table tr td {
-        /* padding: 1rem 0; */
-        font-size: 1rem;
-        width: auto;
-    }
-    /* -------------------------------- */
-    /* hamburger */
+    /* NAVBAR */
     nav ul.menu {
         display: none;
     }
@@ -990,8 +833,9 @@ input[type="date"] {
         padding: 5% 0;
         font-size: 1.5rem;
     }
-    /* ------------------------- */
-    /* pocetna strana */
+    /* KRAJ ZA NAVBAR */
+
+    /* INDEX.HTML */
     .section1 {
         width: 100%;
         height: 40vh;
@@ -1014,7 +858,6 @@ input[type="date"] {
     .btnFirstSection {
         width: 150px;
     }
-    /* druga sekcija */
     .container2 {
         justify-content: center;
     }
@@ -1027,7 +870,6 @@ input[type="date"] {
     .card h2 {
         padding: 3% 0;
     }
-    /* treca sekcija */
     .container3 {
         flex-direction: column;
         align-items: center;
@@ -1050,7 +892,9 @@ input[type="date"] {
     .map iframe {
         width: 90vw;
     }
-    /* --------------FOOTER------------- */
+    /* KRAJ ZA INDEX.HTML */
+
+    /* FOOTER */
     .footer-container {
         height: max-content;
         flex-direction: column;
@@ -1062,19 +906,41 @@ input[type="date"] {
         width: 100%;
         height: max-content;
     }
-    /* ovo znaci da ikonica treba da se izgubi */
     .col-flex img {
         display: none;
     }
-    /* ========================================= O Nama =============================================== */
-    /* prva sekcija*/
+    /* KRAJ ZA FOOTER */
+
+    /* TERMINI.HTML */
+    .submit {
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+        width: 60%;
+    }
+    .inputSpace {
+        width: 70%;
+    }
+    .form #div2 .inputSpace #radioinputs {
+        flex-direction: column;
+        margin-left: 30%;
+        align-items: flex-start;
+    }
+    .table tr th {
+        padding: 0;
+        font-size: 1.2rem;
+    }
+    .table tr td {
+        font-size: 1rem;
+        width: auto;
+    }
+    /* KRAJ ZA TERMINI.HTML */
+    
+    /* O-NAMA.HTML */
     .div1onama{
         background-image: linear-gradient(135deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
-        
     }
     .container1onama{
         flex-direction: column;
-        
     }
     .container1onama img{
         height: 10rem;
@@ -1091,14 +957,10 @@ input[type="date"] {
        text-align:justify;
         font-size: 16px;
         width: 100%;
-        
     }
-
-    /* druga sekcija*/
     .div2onama{
         background-image: linear-gradient(228deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
     }
-
     .container2onama{
         flex-direction: column;
     }
@@ -1106,7 +968,6 @@ input[type="date"] {
         height: 10rem;
         width: 10rem;   
     }
-
     .container22onama{
         order:2;
         padding-bottom: 15%;
@@ -1125,10 +986,7 @@ input[type="date"] {
         font-size: 16px;
         width: 100%;
         margin-left: 0;
-        
     }
-
-    /* treca sekcija*/
     .div3onama{
         background-image: linear-gradient(135deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
     }
@@ -1150,11 +1008,10 @@ input[type="date"] {
        text-align:justify;
         font-size: 16px;
         width: 100%;
-        
     }
-    /* ================================================ Kraj za O nama =========================================================== */
+    /* KRAJ ZA O-NAMA.HTML */
  
-    /* ======================================== PROGRAM.HTML ========================================= */
+    /* PROGRAM.HTML */
     .program {
         letter-spacing: 0.1rem;
         font-size: 2rem;
@@ -1188,35 +1045,19 @@ input[type="date"] {
     .desc button {
         font-size: 1.1rem;
         padding: 2% 5%;
-        /* margin-bottom: 7%; */
     }
-   /* ========================================= KRAJ PROGRAM.HTML ==================================== */
+    /* KRAJ ZA PROGRAM.HTML */
 }
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 600px)and (max-width: 768px) {
-    /* vezano za stranicu TERMINI */
-    .inputSpace {
-        width: 60%;
-    }
-    .table tr th {
-        padding: 0;
-        font-size: 1.2rem;
-    }
-    .table tr td {
-        /* padding: 1rem 0; */
-        font-size: 1rem;
-        width: auto;
-    }
-    /* -------------------------------- */
-    /* hamburger */
+    /* NAVBAR */
     nav ul.menu {
         display: none;
     }
     nav a.icon {
-        /* float: right; */
         display: block;
         justify-self: end;
         width: 20px;
@@ -1237,8 +1078,9 @@ input[type="date"] {
         padding: 5% 0;
         font-size: 1.5rem;
     }
-    /* -------------------------------- */
-    /* pocetna strana */
+    /* KRAJ ZA NAVBAR */
+
+    /* INDEX.HTML */
     .section1 {
         width: 100%;
         height: 40vh;
@@ -1261,7 +1103,6 @@ input[type="date"] {
     .btnFirstSection {
         width: 150px;
     }
-    /* druga sekcija */
     .container2 {
         justify-content: center;
     }
@@ -1274,7 +1115,6 @@ input[type="date"] {
     .card h2 {
         padding: 3% 0;
     }
-    /* treca sekcija */
     .container3 {
         flex-direction: column;
         align-items: center;
@@ -1294,20 +1134,28 @@ input[type="date"] {
         height: max-content;
         padding-bottom: 5%;
     }
+    /* KRAJ ZA INDEX.HTML */
 
+    /* TERMINI.HTML */
+    .inputSpace {
+        width: 60%;
+    }
+    .table tr th {
+        padding: 0;
+        font-size: 1.2rem;
+    }
+    .table tr td {
+        font-size: 1rem;
+        width: auto;
+    }
+    /* KRAJ ZA TERMINI.HTML */
     
-
-
-    /* ======================================== O Nama ============================================= */
-    
-    /* prva sekcija*/
+    /* O-NAMA.HTML */
     .div1onama{
         background-image: linear-gradient(135deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
     }
     .container1onama{
         flex-direction: column;
-
-        
     }
     .container1onama img{
         height: 10rem;
@@ -1325,14 +1173,10 @@ input[type="date"] {
        text-align:justify;
         font-size: 16px;
         width: 100%;
-        
     }
-
-    /* druga sekcija*/
     .div2onama{
         background-image: linear-gradient(228deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
     }
-
     .container2onama{
         flex-direction: column;
     }
@@ -1340,7 +1184,6 @@ input[type="date"] {
         height: 10rem;
         width: 10rem;   
     }
-
     .container22onama{
         order:2;
         padding-bottom: 15%;
@@ -1359,10 +1202,7 @@ input[type="date"] {
         font-size: 16px;
         width: 100%;
         margin-left: 0;
-        
     }
-
-    /* treca sekcija*/
     .div3onama{
         background-image: linear-gradient(135deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
     }
@@ -1384,11 +1224,10 @@ input[type="date"] {
        text-align:justify;
         font-size: 16px;
         width: 100%;
-        
     }
-    /* ================================= Kraj za O nama================================= */
+    /* KRAJ ZA O-NAMA */
 
-    /* ================================= PROGRAM.HTML ====================================== */
+    /* PROGRAM.HTML */
     .program {
         letter-spacing: 0.2rem;
         font-size: 2.3rem;
@@ -1422,25 +1261,17 @@ input[type="date"] {
         font-size: 1.2rem;
         padding: 2% 5%;
     }
-    /* ====================================== KRAJ PROGRAM.HTML ================================== */
-
+    /* KRAJ ZA PROGRAM.HTML */
 }
-
 
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-    /* vezano za stranicu TERMINI */
-    .inputSpace {
-        width: 50%;
-    }
-    /* -------------------------------- */
-    /* hamburger */
+    /* NAVBAR */
     nav ul.menu {
         display: none;
     }
     nav a.icon {
-        /* float: right; */
         display: block;
         justify-self: end;
         width: 20px;
@@ -1461,8 +1292,9 @@ input[type="date"] {
         padding: 5% 0;
         font-size: 1.5rem;
     }
-    /* ----------------------POCETNA STRANA----------------- */
-    /* druga sekcija */
+    /* KRAJ ZA NAVBAR */
+
+    /* INDEX.HTML */
     .section2 h1 {
         font-size: 2.5rem;
     }
@@ -1480,7 +1312,6 @@ input[type="date"] {
     .card h2 {
         padding: 2% 3%;
     }
-    /* treca sekcija */
     .container3 {
         flex-direction: column;
         align-items: center;
@@ -1504,8 +1335,15 @@ input[type="date"] {
         height: max-content;
         padding-bottom: 5%;
     }
+    /* KRAJ ZA INDEX.HTML */
 
-    /* ==================================== PROGRAM.HTML ========================================= */
+    /* TERMINI.HTML */
+    .inputSpace {
+        width: 50%;
+    }
+    /* KRAJ ZA TERMINI.HTML */
+
+    /* PROGRAM.HTML */
     .program {
         letter-spacing: 0.2rem;
         font-size: 2.5rem;
@@ -1539,19 +1377,13 @@ input[type="date"] {
         padding: 2% 5%;
         margin-bottom: 7%;
     }
-    /* ================================ KRAJ PROGRAM.HTML ======================================== */
+    /* KRAJ ZA PROGRAM.HTML */
 }
-
 
 /* Large devices (laptops/desktops, 992px and up) */
 
 @media only screen and (min-width: 992px) and (max-width: 1550px) {
-    /* vezano za stranicu TERMINI */
-    .inputSpace {
-        width: 40%;
-    }
-    /* ----------------------POCETNA STRANA----------------- */
-    /* druga sekcija */
+    /* INDEX.HTML */
     .section2 h1 {
         font-size: 2.5rem;
     }
@@ -1575,20 +1407,24 @@ input[type="date"] {
     .card h2 {
         padding: 2% 3%;
     }
-    /* treca sekcija - kontakt */
     .container3 {
         justify-content: space-between;
         padding: 0 3%;
     }
+    /* KRAJ ZA INDEX.HTML */
 
-    /* ===================================== PROGRAM.HTML ===================================== */
+    /* TERMINI.HTML */
+    .inputSpace {
+        width: 40%;
+    }
+    /* KRAJ ZA TERMINI.HTML */
+    
+    /* PROGRAM.HTML */
     .program {
         letter-spacing: 0.3rem;
         font-size: 3rem;
     }
     .container-program {
-        /* flex-direction: column; */
-        /* padding-top: 5%; */
         justify-content: space-between;
         padding: 2% 3%;
         margin: 3% 15% 5% 15%;
@@ -1612,17 +1448,17 @@ input[type="date"] {
         padding: 4% 0;
         font-size: 1.2rem;
         line-height: 1.6rem;
-        /* text-align: center; */
         letter-spacing: 0.1rem;
     }
     .desc button {
         font-size: 1.2rem;
         padding: 2% 5%;
     }
-    /* ====================================== KRAJ PROGRAM.HTML ================================== */
+    /* KRAJ ZA PROGRAM.HTML */
 }
 
 @media only screen and (min-width: 1551px) and (max-width: 1900px) {
+    /* PROGRAM.HTML */
     .program {
         letter-spacing: 0.3rem;
         font-size: 3rem;
@@ -1654,11 +1490,11 @@ input[type="date"] {
         font-size: 1.4rem;
         line-height: 1.7rem;
         font-weight: lighter;
-        /* text-align: center; */
         letter-spacing: 0.1rem;
     }
     .desc button {
         font-size: 1.4rem;
         padding: 2% 5%;
     }
+    /* KRAJ ZA PROGRAM.HTML */
 } 

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zakazivanje termina | Six Pack Gym</title>
+    <link rel="shortcut icon" type="image/jpg" href="../img/logo.png"/>
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
@@ -14,7 +15,7 @@
 
 <body>
 
-    <!-- NAVBAR -->
+    <!----------------- Navbar ----------------->
     <nav>
         <div class="logo">
             <a href="../index.html"><img src="../img/logo.png" alt="sixpackgym-logo" /></a>
@@ -27,8 +28,11 @@
         </ul>
         <a href="#" class="icon" onclick="myFunction()">&#x2630;</a>
     </nav>
+    <!----------------- End of navbar ----------------->
 
     <div class="pageTermini">
+
+        <!----------------- Form ----------------->
         <section class="form">
             <div id="div1">
                 <div class="inputSpace">
@@ -47,13 +51,11 @@
                     <button class="next next1">Dalje</button>
                 </div>
                 <div class="hidden error error1 ">
-                    <!-- hidden -->
                     Uneseno korisnicko ime i pristupni kod nisu odgovarajuci!
                 </div>
             </div>
-            <!-- ovaj div treba da bude klase hidden i kad se klikne "dalje" onda se sklanja ta klasa -->
+            <!-- Ovaj div treba da bude klase hidden i kad se klikne "dalje" onda se sklanja ta klasa -->
             <div class="hidden" id="div2">
-                <!-- hidden -->
                 <div class="inputSpace">
                     <label for="radioinputs">Izaberite tip treninga: </label>
                     <div id="radioinputs">
@@ -79,14 +81,12 @@
 
                 <!-- u slucaju greske -->
                 <div class="hidden error error2 ">
-                    <!-- hidden -->
                     Morate označiti tip treninga koji zakazujete!
                 </div>
 
             </div>
 
             <div class="hidden" id="div3">
-                <!-- hidden -->
                 <div class="inputSpace">
                     <label for="date">Unesite kog dana želite da zakažete trening</label>
                     <input type="date" name="date" id="date" value="">
@@ -95,30 +95,27 @@
 
                 <!-- u slucaju greske -->
                 <div class="hidden error error3 ">
-                    <!-- hidden -->
                     Uneseni datum nije odgovarajući!
                 </div>
             </div>
 
 
 
-            <!-- kad se lupi "submit" trebaju da se vrate hidden klase svuda i sve da bude kao na po;etku sem 
-                sem sto ce dole da ima i tabela sa zakazanim terminima -->
+            <!-- kad se klikne "submit" treba da se vrate hidden klase svuda i sve da bude kao na pocetku osim 
+                sto ce dole da ima i tabela sa zakazanim terminima -->
             <div class="submitSpace hidden" id="div4">
-                <!-- hidden -->
                 <button class="submit">Zakažite termin</button>
 
             </div>
         </section>
+        <!----------------- End of form ----------------->
 
         <section class="hidden success ">
-            <!-- hidden -->
             <p>Uspešno ste zakazali Vaš trening</p>
         </section>
 
-        <!-- sekcija sa tabelom koja se prikazuje tek kad korisnik unese neki termin -->
+        <!-- Sekcija sa tabelom koja se prikazuje tek kad korisnik unese neki termin -->
         <section class="hidden tableSection">
-            <!-- <table class="table hidden"> -->
             <table class="table">
                 <h2>Vaši treninzi:</h2>
                 <tr>
@@ -128,6 +125,7 @@
                 </tr>
             </table>
         </section>
+        
         <!----------------- Footer ----------------->
         <footer>
             <div class="footer-container">
